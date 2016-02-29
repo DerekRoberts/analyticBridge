@@ -1,1 +1,23 @@
-{ "title": "Test-001" }
+[
+  {
+    "title"       : "Test-001",
+    "export_as"   : "XML-000",
+    "date"        : "0000000000",
+    "description" : "Population pyramid",
+    "results"  : [
+      "records"
+    ]
+  },
+  {
+    "title"       : "PDC-001",
+    "export_as"   : "XML-001",
+    "date"        : "0000000000",
+    "description" : "Population pyramid",
+    "results"  : [
+      "female",
+      "male",
+      "undefined",
+      "undifferentiated"
+    ]
+  }
+]
