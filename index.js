@@ -1,33 +1,21 @@
-// Utility functions
-var ut = require('./lib/util.js');
+// Requires for general utils, file system (fs) and mongo interface
+var ut = require( './lib/util.js' );
+var fs = require( 'fs' );
+var mi = require( './lib/mongo_interface.js' );
 
 // Queries to include
-var queries = require( './queries/list.json' );
+var query_file   = JSON.parse( fs.readFileSync( './queries/list.json' ));
+var query_filter = JSON.parse( '{ "title": 1, "executions": 1 }' );
 
-// MongoDB
-var mongodb = require( 'mongodb' );
-var uri    = 'mongodb://localhost:27017/query_composer_development';
-var query = { title: "Test-001" };
+// Array of titles, used to query Mongo
+var query_titles = ut.grabOneField( query_file, "title" );
 
-
-// Test query
-mongodb.MongoClient.connect( uri, function( error, db ){
-	if( error ){
-		console.log( error );
-		process.exit( 1 );
-	}
-
-	db.collection( 'queries' ).find( queries, { title: 1, executions: 1 }).toArray( function( error, docs ){
+query_file.forEach( function( q ){
+		mi.find( {title:"Test-000"}, query_filter, function( error, docs ){
 		if( error ){
 			console.log( error );
 			process.exit( 1 );
 		}
-
-		console.log( 'Results:' );
-		docs.forEach( function( doc ){
-			console.log( ut.pretty_print( doc ));
-			console.log( "---" );
-		});
 		process.exit( 0 );
 	});
 });
