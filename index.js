@@ -1,21 +1,31 @@
-// Requires for general utils, file system (fs) and mongo interface
+// Requires for general utils and mongo interface
 var ut = require( './lib/util.js' );
-var fs = require( 'fs' );
 var mi = require( './lib/mongo_interface.js' );
 
-// Queries to include
-var query_file   = JSON.parse( fs.readFileSync( './queries/list.json' ));
-var query_filter = JSON.parse( '{ "title": 1, "executions": 1 }' );
+// Receive processed query input list from query_list.js
+var query_list = require( './lib/query_list.js' );
+var titles     = query_list.titles();
 
-// Array of titles, used to query Mongo
-var query_titles = ut.grabOneField( query_file, "title" );
+// Receive processed query input list from query_list.js
+var doctor_list = require( './lib/doctor_list.js' );
+var doctors     = doctor_list.doctors();
 
-query_file.forEach( function( q ){
-		mi.find( {title:"Test-000"}, query_filter, function( error, docs ){
+// Fields to return
+var filter = JSON.parse( '{ "title": 1, "executions": 1 }' );
+
+// XML array, to process
+var toExport = [];
+
+// Collect query resuts
+var l = titles.length;
+for( var i = 0; i < l; i++ ){
+	var title = JSON.parse( '{ "title" : "'+ titles[ i ] +'" }' );
+	mi.find( title, filter, function( error, docs ){
 		if( error ){
 			console.log( error );
 			process.exit( 1 );
 		}
-		process.exit( 0 );
+		toExport.push( docs );
+		console.log( toExport );
 	});
-});
+}
