@@ -1,0 +1,32 @@
+[
+  {
+    "doctor"      : "cpsid",
+    "export_as"   : "El Testomundo",
+    "msp"         : "cpsid",
+    "clinic"      : "100",
+    "reporting"   : [
+      "Test-001",
+      "PDC-001"
+    ]
+  },
+  {
+    "doctor"      : "Claw",
+    "export_as"   : "Dr. Cornelius M. Claw Jr.",
+    "msp"         : "666",
+    "clinic"      : "101",
+    "reporting"   : [
+      "Test-001",
+      "Test-002"
+    ]
+  },
+  {
+    "doctor"      : "McNinja",
+    "export_as"   : "Dr. Patrick McNinja",
+    "msp"         : "123",
+    "clinic"      : "102",
+    "reporting"   : [
+      "PDC-001",
+      "Test-002"
+    ]
+  }
+]
