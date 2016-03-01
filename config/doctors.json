@@ -1,8 +1,10 @@
 [
   {
+    "pid"         : "cpsid",
     "doctor"      : "cpsid",
     "export_as"   : "El Testomundo",
-    "msp"         : "cpsid",
+    "msp"         : "mspid",
+    "cpsid"       : "cpsid",
     "clinic"      : "100",
     "reporting"   : [
       "Test-001",
@@ -10,9 +12,11 @@
     ]
   },
   {
+    "pid"         : "abc123==worldDomination",
     "doctor"      : "Claw",
     "export_as"   : "Dr. Cornelius M. Claw Jr.",
-    "msp"         : "666",
+    "msp"         : "00666",
+    "cpsid"       : "66600",
     "clinic"      : "101",
     "reporting"   : [
       "Test-001",
@@ -20,9 +24,11 @@
     ]
   },
   {
+    "pid"         : "llama!Walrus?Cheese#",
     "doctor"      : "McNinja",
     "export_as"   : "Dr. Patrick McNinja",
-    "msp"         : "123",
+    "msp"         : "12345",
+    "cpsid"       : "54321",
     "clinic"      : "102",
     "reporting"   : [
       "PDC-001",
