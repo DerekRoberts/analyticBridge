@@ -1,18 +1,31 @@
 [
   {
     "title"       : "Test-001",
-    "export_as"   : "XML-000",
+    "export_as"   : "XML-001",
     "date"        : "0000000000",
-    "description" : "Population pyramid",
+    "type"        : "Count",
+    "description" : "A count query.",
     "results"  : [
       "records"
     ]
   },
   {
-    "title"       : "PDC-001",
-    "export_as"   : "XML-001",
+    "title"       : "Test-002",
+    "export_as"   : "XML-002",
     "date"        : "0000000000",
-    "description" : "Population pyramid",
+    "type"        : "Ratio",
+    "description" : "A ratio query.",
+    "results"  : [
+      "numerator",
+      "denominator"
+    ]
+  },
+  {
+    "title"       : "PDC-001",
+    "export_as"   : "XML-003",
+    "date"        : "0000000000",
+    "type"        : "Pyramid",
+    "description" : "A pyramid query.",
     "results"  : [
       "female",
       "male",
