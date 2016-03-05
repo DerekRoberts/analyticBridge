@@ -1,19 +1,11 @@
-// Requires for general utils and mongo interface
-var ut = require( './lib/util.js' );
-var mi = require( './lib/mongo_interface.js' );
-var xb = require( './lib/xml_builder.js' );
+// Raw doctor data for XML headers
+var headers = require( './lib/headers.js' ).raw;
 
-// Receive processed query input list from query_list.js
-var query_list = require( './lib/query_list.js' );
-var titles     = query_list.titles();
+// Obtain queries, specified in ./lib/queries.json
+var executions = require( './lib/executions.js' );
+executions.executions( function( error, results ){
+  if( error ){ throw new Error( error )}
 
-// Receive processed query input list from query_list.js
-var doctor_list = require( './lib/doctor_list.js' );
-var doctors     = doctor_list.doctors();
-
-// XML array, to process
-var toExport = doctors;
-
-// Replace PDC queries to pre-format as HDC/AMCARE queries
-
-// ToDo: Export toExport
+  console.log( results );
+  return results;
+});
