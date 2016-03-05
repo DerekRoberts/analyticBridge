@@ -1,7 +1,17 @@
 [
   {
+    "title"       : "PatientCounts",
+    "export_as"   : "PatientCounts",
+    "date"        : "0000000000",
+    "type"        : "Count",
+    "description" : "Population profile in ten year ranges.",
+    "results"  : [
+      "records"
+    ]
+  },
+  {
     "title"       : "Test-001",
-    "export_as"   : "XML-001",
+    "export_as"   : "XML-002",
     "date"        : "0000000000",
     "type"        : "Count",
     "description" : "A count query.",
@@ -11,7 +21,7 @@
   },
   {
     "title"       : "Test-002",
-    "export_as"   : "XML-002",
+    "export_as"   : "XML-003",
     "date"        : "0000000000",
     "type"        : "Ratio",
     "description" : "A ratio query.",
@@ -22,10 +32,23 @@
   },
   {
     "title"       : "PDC-001",
-    "export_as"   : "XML-003",
+    "export_as"   : "XML-004",
     "date"        : "0000000000",
-    "type"        : "Pyramid",
-    "description" : "A pyramid query.",
+    "type"        : "Count",
+    "description" : "A count query.",
+    "results"  : [
+      "female",
+      "male",
+      "undefined",
+      "undifferentiated"
+    ]
+  },
+  {
+    "title"       : "PDC-002",
+    "export_as"   : "XML-004",
+    "date"        : "0000000000",
+    "type"        : "Ratio",
+    "description" : "A ratio query.",
     "results"  : [
       "female",
       "male",
