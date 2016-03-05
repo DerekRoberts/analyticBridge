@@ -1,0 +1,153 @@
+{
+  "Scorecard" :
+  {
+    "xmlns" : "http://tempuri.org/ScoreCard.xsd",
+    "ScoreCardHeader" :
+    {
+      "UniqueScoreCardIdentifier" : 1,
+      "Title" : 1,
+      "ScoreCardMode" :
+      {
+        "SinglePhysicianPracticeSubsetScoreCard":
+        {
+          "ReportingPhysicianMSPNumber" : 1,
+          "ReportingPhysicianName" : 1,
+          "PracticeAndPhysicianDetails" :
+          {
+            "PracticeInformation" :
+            {
+              "UniquePracticeIdentifier" : 1
+            }
+          }
+        }
+      },
+      "ScoreCardDataDateTime" : 1,
+      "ScoreCardGenerationDateTime" : 1,
+      "GeneratingSoftwareName" : "HDC E2E Exporter",
+      "GeneratingSoftwareVersion" : "0.0.0",
+      "GeneratingSoftwareVendorContactInformation" : "derek.roberts@gmail.com",
+      "GeneratingPracticeOrPhysicianContactInformation": "derek.roberts@gmail.com"
+    },
+    "ReportingCategories" : {
+      "PopulatedByQueries.json":
+      {
+        "denominator" :
+        {
+          "PopulatedByQueries.json" : 1
+        },
+        "numerator" :
+        {
+          "PopulatedByQueries.json" : 1
+        }
+      }
+    },
+    "PatientCounts" :
+    {
+      "Male" :
+      {
+        "TenYearRanges" :
+        {
+          "ZeroToNine" : 1,
+          "TenToNineteen" : 1,
+          "TwentyToTwentyNine" : 1,
+          "ThirtyToThirtyNine" : 1,
+          "FourtyToFourtyNine" : 1,
+          "FiftyToFiftyNine" : 1,
+          "SixtyToSixtyNine" : 1,
+          "SeventyToSeventyNine" : 1,
+          "EightyToEightyNine" : 1,
+          "NinetyToNinetyNineAndOlder" : 1,
+          "UnspecifiedAge" : 1
+        }
+      },
+      "Female" :
+      {
+        "TenYearRanges" :
+        {
+          "ZeroToNine" : 1,
+          "TenToNineteen" : 1,
+          "TwentyToTwentyNine" : 1,
+          "ThirtyToThirtyNine" : 1,
+          "FourtyToFourtyNine" : 1,
+          "FiftyToFiftyNine" : 1,
+          "SixtyToSixtyNine" : 1,
+          "SeventyToSeventyNine" : 1,
+          "EightyToEightyNine" : 1,
+          "NinetyToNinetyNineAndOlder" : 1,
+          "UnspecifiedAge" : 1
+        }
+      },
+      "Unspecified" :
+      {
+        "TenYearRanges" :
+        {
+          "ZeroToNine" : 1,
+          "TenToNineteen" : 1,
+          "TwentyToTwentyNine" : 1,
+          "ThirtyToThirtyNine" : 1,
+          "FourtyToFourtyNine" : 1,
+          "FiftyToFiftyNine" : 1,
+          "SixtyToSixtyNine" : 1,
+          "SeventyToSeventyNine" : 1,
+          "EightyToEightyNine" : 1,
+          "NinetyToNinetyNineAndOlder" : 1,
+          "UnspecifiedAge" : 1
+        }
+      }
+    },
+    "ContactCounts" :
+    {
+      "Male" :
+      {
+        "TenYearRanges" :
+        {
+          "ZeroToNine" : 1,
+          "TenToNineteen" : 1,
+          "TwentyToTwentyNine" : 1,
+          "ThirtyToThirtyNine" : 1,
+          "FourtyToFourtyNine" : 1,
+          "FiftyToFiftyNine" : 1,
+          "SixtyToSixtyNine" : 1,
+          "SeventyToSeventyNine" : 1,
+          "EightyToEightyNine" : 1,
+          "NinetyToNinetyNineAndOlder" : 1,
+          "UnspecifiedAge" : 1
+        }
+      },
+      "Female" :
+      {
+        "TenYearRanges" :
+        {
+          "ZeroToNine" : 1,
+          "TenToNineteen" : 1,
+          "TwentyToTwentyNine" : 1,
+          "ThirtyToThirtyNine" : 1,
+          "FourtyToFourtyNine" : 1,
+          "FiftyToFiftyNine" : 1,
+          "SixtyToSixtyNine" : 1,
+          "SeventyToSeventyNine" : 1,
+          "EightyToEightyNine" : 1,
+          "NinetyToNinetyNineAndOlder" : 1,
+          "UnspecifiedAge" : 1
+        }
+      },
+      "Unspecified" :
+      {
+        "TenYearRanges" :
+        {
+          "ZeroToNine" : 1,
+          "TenToNineteen" : 1,
+          "TwentyToTwentyNine" : 1,
+          "ThirtyToThirtyNine" : 1,
+          "FourtyToFourtyNine" : 1,
+          "FiftyToFiftyNine" : 1,
+          "SixtyToSixtyNine" : 1,
+          "SeventyToSeventyNine" : 1,
+          "EightyToEightyNine" : 1,
+          "NinetyToNinetyNineAndOlder" : 1,
+          "UnspecifiedAge" : 1
+        }
+      }
+    }
+  }
+}
