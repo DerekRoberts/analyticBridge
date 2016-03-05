@@ -1,3 +1,6 @@
+// XML output
+var parser = require( 'xml2json' );
+
 // Raw doctor data for XML headers
 var headers = require( './lib/headers.js' ).raw;
 
