@@ -1,43 +1,43 @@
 {
-  "Scorecard" :
+  "ScoreCard" :
   {
     "xmlns" : "http://tempuri.org/ScoreCard.xsd",
     "ScoreCardHeader" :
     {
-      "UniqueScoreCardIdentifier" : 1,
-      "Title" : 1,
+      "UniqueScoreCardIdentifier" : "",
+      "Title" : "PDC/hQuery Generated Scorecard",
       "ScoreCardMode" :
       {
         "SinglePhysicianPracticeSubsetScoreCard":
         {
-          "ReportingPhysicianMSPNumber" : 1,
-          "ReportingPhysicianName" : 1,
+          "ReportingPhysicianMSPNumber" : "Value Not Specified",
+          "ReportingPhysicianName" : "",
           "PracticeAndPhysicianDetails" :
           {
             "PracticeInformation" :
             {
-              "UniquePracticeIdentifier" : 1
+              "UniquePracticeIdentifier" : ""
             }
           }
         }
       },
-      "ScoreCardDataDateTime" : 1,
-      "ScoreCardGenerationDateTime" : 1,
+      "ScoreCardDataDateTime" : "Value Not Specified",
+      "ScoreCardGenerationDateTime" : "Value Not Specified",
       "GeneratingSoftwareName" : "HDC E2E Exporter",
       "GeneratingSoftwareVersion" : "0.0.0",
-      "GeneratingSoftwareVendorContactInformation" : "derek.roberts@gmail.com",
-      "GeneratingPracticeOrPhysicianContactInformation": "derek.roberts@gmail.com"
+      "GeneratingSoftwareVendorContactInformation" : "derek.roberts@gmail.com, support@amcarebc.ca",
+      "GeneratingPracticeOrPhysicianContactInformation": "derek.roberts@gmail.com, support@amcarebc.ca"
     },
     "ReportingCategories" : {
       "PopulatedByQueries.json":
       {
         "denominator" :
         {
-          "PopulatedByQueries.json" : 1
+          "PopulatedByQueries.json" : "Value Not Specified"
         },
         "numerator" :
         {
-          "PopulatedByQueries.json" : 1
+          "PopulatedByQueries.json" : "Value Not Specified"
         }
       }
     },
@@ -47,51 +47,51 @@
       {
         "TenYearRanges" :
         {
-          "ZeroToNine" : 1,
-          "TenToNineteen" : 1,
-          "TwentyToTwentyNine" : 1,
-          "ThirtyToThirtyNine" : 1,
-          "FourtyToFourtyNine" : 1,
-          "FiftyToFiftyNine" : 1,
-          "SixtyToSixtyNine" : 1,
-          "SeventyToSeventyNine" : 1,
-          "EightyToEightyNine" : 1,
-          "NinetyToNinetyNineAndOlder" : 1,
-          "UnspecifiedAge" : 1
+          "ZeroToNine" : "Value Not Specified",
+          "TenToNineteen" : "Value Not Specified",
+          "TwentyToTwentyNine" : "Value Not Specified",
+          "ThirtyToThirtyNine" : "Value Not Specified",
+          "FourtyToFourtyNine" : "Value Not Specified",
+          "FiftyToFiftyNine" : "Value Not Specified",
+          "SixtyToSixtyNine" : "Value Not Specified",
+          "SeventyToSeventyNine" : "Value Not Specified",
+          "EightyToEightyNine" : "Value Not Specified",
+          "NinetyToNinetyNineAndOlder" : "Value Not Specified",
+          "UnspecifiedAge" : "Value Not Specified"
         }
       },
       "Female" :
       {
         "TenYearRanges" :
         {
-          "ZeroToNine" : 1,
-          "TenToNineteen" : 1,
-          "TwentyToTwentyNine" : 1,
-          "ThirtyToThirtyNine" : 1,
-          "FourtyToFourtyNine" : 1,
-          "FiftyToFiftyNine" : 1,
-          "SixtyToSixtyNine" : 1,
-          "SeventyToSeventyNine" : 1,
-          "EightyToEightyNine" : 1,
-          "NinetyToNinetyNineAndOlder" : 1,
-          "UnspecifiedAge" : 1
+          "ZeroToNine" : "Value Not Specified",
+          "TenToNineteen" : "Value Not Specified",
+          "TwentyToTwentyNine" : "Value Not Specified",
+          "ThirtyToThirtyNine" : "Value Not Specified",
+          "FourtyToFourtyNine" : "Value Not Specified",
+          "FiftyToFiftyNine" : "Value Not Specified",
+          "SixtyToSixtyNine" : "Value Not Specified",
+          "SeventyToSeventyNine" : "Value Not Specified",
+          "EightyToEightyNine" : "Value Not Specified",
+          "NinetyToNinetyNineAndOlder" : "Value Not Specified",
+          "UnspecifiedAge" : "Value Not Specified"
         }
       },
       "Unspecified" :
       {
         "TenYearRanges" :
         {
-          "ZeroToNine" : 1,
-          "TenToNineteen" : 1,
-          "TwentyToTwentyNine" : 1,
-          "ThirtyToThirtyNine" : 1,
-          "FourtyToFourtyNine" : 1,
-          "FiftyToFiftyNine" : 1,
-          "SixtyToSixtyNine" : 1,
-          "SeventyToSeventyNine" : 1,
-          "EightyToEightyNine" : 1,
-          "NinetyToNinetyNineAndOlder" : 1,
-          "UnspecifiedAge" : 1
+          "ZeroToNine" : "Value Not Specified",
+          "TenToNineteen" : "Value Not Specified",
+          "TwentyToTwentyNine" : "Value Not Specified",
+          "ThirtyToThirtyNine" : "Value Not Specified",
+          "FourtyToFourtyNine" : "Value Not Specified",
+          "FiftyToFiftyNine" : "Value Not Specified",
+          "SixtyToSixtyNine" : "Value Not Specified",
+          "SeventyToSeventyNine" : "Value Not Specified",
+          "EightyToEightyNine" : "Value Not Specified",
+          "NinetyToNinetyNineAndOlder" : "Value Not Specified",
+          "UnspecifiedAge" : "Value Not Specified"
         }
       }
     },
@@ -101,51 +101,51 @@
       {
         "TenYearRanges" :
         {
-          "ZeroToNine" : 1,
-          "TenToNineteen" : 1,
-          "TwentyToTwentyNine" : 1,
-          "ThirtyToThirtyNine" : 1,
-          "FourtyToFourtyNine" : 1,
-          "FiftyToFiftyNine" : 1,
-          "SixtyToSixtyNine" : 1,
-          "SeventyToSeventyNine" : 1,
-          "EightyToEightyNine" : 1,
-          "NinetyToNinetyNineAndOlder" : 1,
-          "UnspecifiedAge" : 1
+          "ZeroToNine" : "Value Not Specified",
+          "TenToNineteen" : "Value Not Specified",
+          "TwentyToTwentyNine" : "Value Not Specified",
+          "ThirtyToThirtyNine" : "Value Not Specified",
+          "FourtyToFourtyNine" : "Value Not Specified",
+          "FiftyToFiftyNine" : "Value Not Specified",
+          "SixtyToSixtyNine" : "Value Not Specified",
+          "SeventyToSeventyNine" : "Value Not Specified",
+          "EightyToEightyNine" : "Value Not Specified",
+          "NinetyToNinetyNineAndOlder" : "Value Not Specified",
+          "UnspecifiedAge" : "Value Not Specified"
         }
       },
       "Female" :
       {
         "TenYearRanges" :
         {
-          "ZeroToNine" : 1,
-          "TenToNineteen" : 1,
-          "TwentyToTwentyNine" : 1,
-          "ThirtyToThirtyNine" : 1,
-          "FourtyToFourtyNine" : 1,
-          "FiftyToFiftyNine" : 1,
-          "SixtyToSixtyNine" : 1,
-          "SeventyToSeventyNine" : 1,
-          "EightyToEightyNine" : 1,
-          "NinetyToNinetyNineAndOlder" : 1,
-          "UnspecifiedAge" : 1
+          "ZeroToNine" : "Value Not Specified",
+          "TenToNineteen" : "Value Not Specified",
+          "TwentyToTwentyNine" : "Value Not Specified",
+          "ThirtyToThirtyNine" : "Value Not Specified",
+          "FourtyToFourtyNine" : "Value Not Specified",
+          "FiftyToFiftyNine" : "Value Not Specified",
+          "SixtyToSixtyNine" : "Value Not Specified",
+          "SeventyToSeventyNine" : "Value Not Specified",
+          "EightyToEightyNine" : "Value Not Specified",
+          "NinetyToNinetyNineAndOlder" : "Value Not Specified",
+          "UnspecifiedAge" : "Value Not Specified"
         }
       },
       "Unspecified" :
       {
         "TenYearRanges" :
         {
-          "ZeroToNine" : 1,
-          "TenToNineteen" : 1,
-          "TwentyToTwentyNine" : 1,
-          "ThirtyToThirtyNine" : 1,
-          "FourtyToFourtyNine" : 1,
-          "FiftyToFiftyNine" : 1,
-          "SixtyToSixtyNine" : 1,
-          "SeventyToSeventyNine" : 1,
-          "EightyToEightyNine" : 1,
-          "NinetyToNinetyNineAndOlder" : 1,
-          "UnspecifiedAge" : 1
+          "ZeroToNine" : "Value Not Specified",
+          "TenToNineteen" : "Value Not Specified",
+          "TwentyToTwentyNine" : "Value Not Specified",
+          "ThirtyToThirtyNine" : "Value Not Specified",
+          "FourtyToFourtyNine" : "Value Not Specified",
+          "FiftyToFiftyNine" : "Value Not Specified",
+          "SixtyToSixtyNine" : "Value Not Specified",
+          "SeventyToSeventyNine" : "Value Not Specified",
+          "EightyToEightyNine" : "Value Not Specified",
+          "NinetyToNinetyNineAndOlder" : "Value Not Specified",
+          "UnspecifiedAge" : "Value Not Specified"
         }
       }
     }
