@@ -6,7 +6,7 @@
     "type"        : "Count",
     "description" : "Population profile in ten year ranges.",
     "results"  : [
-      "records"
+      "ScoreCard"
     ]
   },
   {
@@ -31,16 +31,14 @@
     ]
   },
   {
-    "title"       : "PDC-001",
-    "export_as"   : "XML-004",
+    "title"       : "HDC-1921",
+    "export_as"   : "HDC-1921",
     "date"        : "0000000000",
-    "type"        : "Count",
-    "description" : "A count query.",
+    "type"        : "ratio",
+    "description" : "A ratio query.",
     "results"  : [
-      "female",
-      "male",
-      "undefined",
-      "undifferentiated"
+      "numerator",
+      "denominator"
     ]
   },
   {
