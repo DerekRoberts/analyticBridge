@@ -1,5 +1,5 @@
 {
-  "xmlns" : "http://tempuri.org/ScoreCard.xsd",
+  "@" : {"xmlns" : "http://tempuri.org/ScoreCard.xsd"},
   "ScoreCardHeader" :
   {
     "UniqueScoreCardIdentifier" : "",
@@ -24,18 +24,9 @@
     "GeneratingSoftwareName" : "HDC E2E Exporter",
     "GeneratingSoftwareVersion" : "0.0.0",
     "GeneratingSoftwareVendorContactInformation" : "derek.roberts@gmail.com, support@amcarebc.ca",
-    "GeneratingPracticeOrPhysicianContactInformation": "derek.roberts@gmail.com, support@amcarebc.ca"
+    "GeneratingPracticeOrPhysicianContactInformation": ""
   },
-  "ReportingCategories" : {
-    "PopulatedByQueries.json":
-    {
-      "@" :
-      {
-        "denominator" : "Value Not Specified",
-        "numerator" : "Value Not Specified"
-      }
-    }
-  },
+  "ReportingCategories" : {},
   "PatientCounts" :
   {
     "Male" :
@@ -46,7 +37,7 @@
         "TenToNineteen" : "Value Not Specified",
         "TwentyToTwentyNine" : "Value Not Specified",
         "ThirtyToThirtyNine" : "Value Not Specified",
-        "FourtyToFourtyNine" : "Value Not Specified",
+        "FortyToFortyNine" : "Value Not Specified",
         "FiftyToFiftyNine" : "Value Not Specified",
         "SixtyToSixtyNine" : "Value Not Specified",
         "SeventyToSeventyNine" : "Value Not Specified",
@@ -63,7 +54,7 @@
         "TenToNineteen" : "Value Not Specified",
         "TwentyToTwentyNine" : "Value Not Specified",
         "ThirtyToThirtyNine" : "Value Not Specified",
-        "FourtyToFourtyNine" : "Value Not Specified",
+        "FortyToFortyNine" : "Value Not Specified",
         "FiftyToFiftyNine" : "Value Not Specified",
         "SixtyToSixtyNine" : "Value Not Specified",
         "SeventyToSeventyNine" : "Value Not Specified",
@@ -80,61 +71,7 @@
         "TenToNineteen" : "Value Not Specified",
         "TwentyToTwentyNine" : "Value Not Specified",
         "ThirtyToThirtyNine" : "Value Not Specified",
-        "FourtyToFourtyNine" : "Value Not Specified",
-        "FiftyToFiftyNine" : "Value Not Specified",
-        "SixtyToSixtyNine" : "Value Not Specified",
-        "SeventyToSeventyNine" : "Value Not Specified",
-        "EightyToEightyNine" : "Value Not Specified",
-        "NinetyToNinetyNineAndOlder" : "Value Not Specified",
-        "UnspecifiedAge" : "Value Not Specified"
-      }
-    }
-  },
-  "ContactCounts" :
-  {
-    "Male" :
-    {
-      "TenYearRanges" :
-      {
-        "ZeroToNine" : "Value Not Specified",
-        "TenToNineteen" : "Value Not Specified",
-        "TwentyToTwentyNine" : "Value Not Specified",
-        "ThirtyToThirtyNine" : "Value Not Specified",
-        "FourtyToFourtyNine" : "Value Not Specified",
-        "FiftyToFiftyNine" : "Value Not Specified",
-        "SixtyToSixtyNine" : "Value Not Specified",
-        "SeventyToSeventyNine" : "Value Not Specified",
-        "EightyToEightyNine" : "Value Not Specified",
-        "NinetyToNinetyNineAndOlder" : "Value Not Specified",
-        "UnspecifiedAge" : "Value Not Specified"
-      }
-    },
-    "Female" :
-    {
-      "TenYearRanges" :
-      {
-        "ZeroToNine" : "Value Not Specified",
-        "TenToNineteen" : "Value Not Specified",
-        "TwentyToTwentyNine" : "Value Not Specified",
-        "ThirtyToThirtyNine" : "Value Not Specified",
-        "FourtyToFourtyNine" : "Value Not Specified",
-        "FiftyToFiftyNine" : "Value Not Specified",
-        "SixtyToSixtyNine" : "Value Not Specified",
-        "SeventyToSeventyNine" : "Value Not Specified",
-        "EightyToEightyNine" : "Value Not Specified",
-        "NinetyToNinetyNineAndOlder" : "Value Not Specified",
-        "UnspecifiedAge" : "Value Not Specified"
-      }
-    },
-    "Unspecified" :
-    {
-      "TenYearRanges" :
-      {
-        "ZeroToNine" : "Value Not Specified",
-        "TenToNineteen" : "Value Not Specified",
-        "TwentyToTwentyNine" : "Value Not Specified",
-        "ThirtyToThirtyNine" : "Value Not Specified",
-        "FourtyToFourtyNine" : "Value Not Specified",
+        "FortyToFortyNine" : "Value Not Specified",
         "FiftyToFiftyNine" : "Value Not Specified",
         "SixtyToSixtyNine" : "Value Not Specified",
         "SeventyToSeventyNine" : "Value Not Specified",
