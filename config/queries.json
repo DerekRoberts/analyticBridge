@@ -1,57 +1,49 @@
-[
+{
+  "PatientCounts" :
   {
     "title"       : "PatientCounts",
-    "export_as"   : "PatientCounts",
-    "date"        : "0000000000",
-    "type"        : "Count",
+    "type"        : "count",
     "description" : "Population profile in ten year ranges.",
-    "results"  : [
-      "ScoreCard"
-    ]
+    "map"         :
+    {
+      "0" : "ZeroToNine",
+      "10" : "TenToNineteen",
+      "20" : "TwentyToTwentyNine",
+      "30" : "ThirtyToThirtyNine",
+      "40" : "FortyToFortyNine",
+      "50" : "FiftyToFiftyNine",
+      "60" : "SixtyToSixtyNine",
+      "70" : "SeventyToSeventyNine",
+      "80" : "EightyToEightyNine",
+      "90" : "NinetyToNinetyNineAndOlder"
+    }
   },
+  "Test-001" :
   {
     "title"       : "Test-001",
-    "export_as"   : "XML-002",
-    "date"        : "0000000000",
-    "type"        : "Count",
-    "description" : "A count query.",
-    "results"  : [
-      "records"
-    ]
-  },
-  {
-    "title"       : "Test-002",
-    "export_as"   : "XML-003",
-    "date"        : "0000000000",
-    "type"        : "Ratio",
-    "description" : "A ratio query.",
-    "results"  : [
-      "numerator",
-      "denominator"
-    ]
-  },
-  {
-    "title"       : "HDC-1921",
-    "export_as"   : "HDC-1921",
-    "date"        : "0000000000",
     "type"        : "ratio",
     "description" : "A ratio query.",
-    "results"  : [
-      "numerator",
-      "denominator"
-    ]
+    "xml_path"    : "ReportingCategories.PDC_Test-001"
   },
+  "Test-002" :
+  {
+    "title"       : "Test-002",
+    "type"        : "ratio",
+    "description" : "A ratio query.",
+    "xml_path"    : "ReportingCategories.PDC_Test-002"
+  },
+  "HDC-1921" :
+  {
+    "title"       : "HDC-1921",
+    "type"        : "ratio",
+    "description" : "A ratio query.",
+    "xml_path"    : "ReportingCategories.PDC_HDC-1921"
+  },
+  "PDC-002" :
   {
     "title"       : "PDC-002",
-    "export_as"   : "XML-004",
-    "date"        : "0000000000",
-    "type"        : "Ratio",
+    "type"        : "ratio",
     "description" : "A ratio query.",
-    "results"  : [
-      "female",
-      "male",
-      "undefined",
-      "undifferentiated"
-    ]
+    "xml_path"    : "ReportingCategories.PDC_PDC-002"
   }
-]
+}
