@@ -7,6 +7,27 @@ var headers = require( './lib/headers.js' );
 // Store processed doctor and query data
 var doc_data = [];
 
+// Combines ReportingCategories queries into single objects
+function result_combiner( result_set ){
+  var result_combined = {};
+  if( result_set.length && result_set[0].category === "ReportingCategories" ){
+
+    var date     = result_set[0].date;
+    var result   = result_set[0].result;
+    var value    = result_set[0].value;
+
+    result_combined['date'] = date;
+    result_set.forEach( function( r ){
+      result_combined[ r.result ] = r.value;
+    });
+
+    // console.log( result_combined );
+    result_set = result_combined;
+    return result_combined;
+  }
+  return result_set;
+}
+
 function doc_builder( results ){
   var doctors = headers.doctors();
 
@@ -24,26 +45,29 @@ function doc_builder( results ){
       delete results[ doc ][ 'PatientCounts' ];
     }
 
-    if( typeof results[ doc ] == 'object' && Object.keys(results[doc])){
+    if( typeof results[ doc ] == 'object' && Object.keys(results[ doc ])){
       Object.keys( results[ doc ]).forEach( function( query ){
         if( results[ doc ][ query ][ 0 ].category === 'ReportingCategories' ){
-          doc_data[ doc ][ 'ReportingCategories' ][ query ] = results[ doc ][ query ];
+          doc_data[ doc ][ 'ReportingCategories' ][ query ] = result_combiner( results[ doc ][ query ]);
         }
       });
     }
   });
 
-  // TODO: Make this less of a mess
-  // TODO: Make a clean return function
+  xml_builder( scorecard, doc_data );
   return doc_data;
+}
+
+function xml_builder( json_template, all_doctors ){
+  var xb = require('./lib/xml_builder.js');
+  xb.test( json_template, all_doctors  );
 }
 
 // Obtain queries, specified in ./lib/queries.json
 var executions = require( './lib/executions.js' );
-var blah = executions.executions( function( error, results ){
+executions.executions( function( error, results ){
   if( error ){ throw new Error( error )}
 
-  console.log( doc_builder( results ));
   return doc_builder( results );
 });
 
