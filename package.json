@@ -12,6 +12,7 @@
   "dependencies": {
     "kerberos" : "0.0.12",
     "mongodb": "~2.0",
+    "node-uuid" : "1.4.7",
     "js2xmlparser": "1.0.0"
   }
 }
