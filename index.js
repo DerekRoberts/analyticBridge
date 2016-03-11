@@ -21,11 +21,22 @@ function result_combiner( result_set ){
       result_combined[ r.result ] = r.value;
     });
 
-    // console.log( result_combined );
     result_set = result_combined;
     return result_combined;
   }
   return result_set;
+}
+
+// Combine template and doctor data into scorecards
+function xml_builder( json_template, all_doctors ){
+  var xml_builder = require('./lib/xml_builder.js');
+  xml_builder.create( json_template, all_doctors, function( error, results ){
+    if( error ){ throw new Error( error )}
+
+    //TODO: Use names and multiple file saves
+    console.log( results[ 0 ]);
+    require( 'fs' ).writeFileSync( './scorecards/cpsid.xml', results[ 0 ]);
+  });
 }
 
 function doc_builder( results ){
@@ -56,11 +67,6 @@ function doc_builder( results ){
 
   xml_builder( scorecard, doc_data );
   return doc_data;
-}
-
-function xml_builder( json_template, all_doctors ){
-  var xb = require('./lib/xml_builder.js');
-  xb.test( json_template, all_doctors  );
 }
 
 // Obtain queries, specified in ./lib/queries.json
