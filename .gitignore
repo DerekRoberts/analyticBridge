@@ -8,7 +8,7 @@
 *.rar
 .directory
 node_modules/
-test*
+scorecards/*.xml
 
 ########################
 ### GitHub Suggested ###
