@@ -16,7 +16,11 @@ function result_combiner( result_set ){
     var result   = result_set[0].result;
     var value    = result_set[0].value;
 
+    // Save date in output structure
     result_combined['date'] = date;
+    // Save numerator and denominator in output structure
+    // r.result should be either "numerator" or "denominator" for
+    // queries under "ReportingCategories"
     result_set.forEach( function( r ){
       result_combined[ r.result ] = r.value;
     });
@@ -39,6 +43,7 @@ function xml_builder( json_template, all_doctors ){
   });
 }
 
+// Build data structure with results organized by doctor
 function doc_builder( results ){
   var doctors = headers.doctors();
 
@@ -56,6 +61,7 @@ function doc_builder( results ){
       delete results[ doc ][ 'PatientCounts' ];
     }
 
+    // If there are ReportingCategories, add them
     if( typeof results[ doc ] == 'object' && Object.keys(results[ doc ])){
       Object.keys( results[ doc ]).forEach( function( query ){
         if( results[ doc ][ query ][ 0 ].category === 'ReportingCategories' ){
@@ -65,6 +71,7 @@ function doc_builder( results ){
     }
   });
 
+  // Create XML files
   xml_builder( scorecard, doc_data );
   return doc_data;
 }
