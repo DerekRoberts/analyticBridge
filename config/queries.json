@@ -18,19 +18,68 @@
       "90" : "NinetyToNinetyNineAndOlder"
     }
   },
-  "Test-001" :
+  "HDC-0954" :
   {
-    "title"       : "Test-001",
+    "title"       : "HDC-0954",
     "type"        : "ratio",
     "description" : "A ratio query.",
-    "xml_path"    : "ReportingCategories.PDC_Test-001"
+    "xml_path"    : "ReportingCategories.PDC_HDC-0954"
   },
-  "Test-002" :
+  "HDC-0955" :
   {
-    "title"       : "Test-002",
+    "title"       : "HDC-0955",
     "type"        : "ratio",
     "description" : "A ratio query.",
-    "xml_path"    : "ReportingCategories.PDC_Test-002"
+    "xml_path"    : "ReportingCategories.PDC_HDC-0955"
+  },
+  "HDC-0956" :
+  {
+    "title"       : "HDC-0956",
+    "type"        : "ratio",
+    "description" : "A ratio query.",
+    "xml_path"    : "ReportingCategories.PDC_HDC-0956"
+  },
+  "HDC-0958" :
+  {
+    "title"       : "HDC-0958",
+    "type"        : "ratio",
+    "description" : "A ratio query.",
+    "xml_path"    : "ReportingCategories.PDC_HDC-0958"
+  },
+  "HDC-0959" :
+  {
+    "title"       : "HDC-0959",
+    "type"        : "ratio",
+    "description" : "A ratio query.",
+    "xml_path"    : "ReportingCategories.PDC_HDC-0959"
+  },
+  "HDC-0960" :
+  {
+    "title"       : "HDC-0960",
+    "type"        : "ratio",
+    "description" : "A ratio query.",
+    "xml_path"    : "ReportingCategories.PDC_HDC-0960"
+  },
+  "HDC-0962" :
+  {
+    "title"       : "HDC-0962",
+    "type"        : "ratio",
+    "description" : "A ratio query.",
+    "xml_path"    : "ReportingCategories.PDC_HDC-0962"
+  },
+  "HDC-0964" :
+  {
+    "title"       : "HDC-0964",
+    "type"        : "ratio",
+    "description" : "A ratio query.",
+    "xml_path"    : "ReportingCategories.PDC_HDC-0964"
+  },
+  "HDC-0981" :
+  {
+    "title"       : "HDC-0981",
+    "type"        : "ratio",
+    "description" : "A ratio query.",
+    "xml_path"    : "ReportingCategories.PDC_HDC-0981"
   },
   "HDC-1921" :
   {
@@ -39,11 +88,67 @@
     "description" : "A ratio query.",
     "xml_path"    : "ReportingCategories.PDC_HDC-1921"
   },
-  "PDC-002" :
+  "HDC-1922" :
   {
-    "title"       : "PDC-002",
+    "title"       : "HDC-1922",
     "type"        : "ratio",
     "description" : "A ratio query.",
-    "xml_path"    : "ReportingCategories.PDC_PDC-002"
+    "xml_path"    : "ReportingCategories.PDC_HDC-1922"
+  },
+  "HDC-1923" :
+  {
+    "title"       : "HDC-1923",
+    "type"        : "ratio",
+    "description" : "A ratio query.",
+    "xml_path"    : "ReportingCategories.PDC_HDC-1923"
+  },
+  "HDC-1924" :
+  {
+    "title"       : "HDC-1924",
+    "type"        : "ratio",
+    "description" : "A ratio query.",
+    "xml_path"    : "ReportingCategories.PDC_HDC-1924"
+  },
+  "HDC-1925" :
+  {
+    "title"       : "HDC-1925",
+    "type"        : "ratio",
+    "description" : "A ratio query.",
+    "xml_path"    : "ReportingCategories.PDC_HDC-1925"
+  },
+  "HDC-1926" :
+  {
+    "title"       : "HDC-1926",
+    "type"        : "ratio",
+    "description" : "A ratio query.",
+    "xml_path"    : "ReportingCategories.PDC_HDC-1926"
+  },
+  "HDC-1927" :
+  {
+    "title"       : "HDC-1927",
+    "type"        : "ratio",
+    "description" : "A ratio query.",
+    "xml_path"    : "ReportingCategories.PDC_HDC-1927"
+  },
+  "HDC-1928" :
+  {
+    "title"       : "HDC-1928",
+    "type"        : "ratio",
+    "description" : "A ratio query.",
+    "xml_path"    : "ReportingCategories.PDC_HDC-1928"
+  },
+  "HDC-1929" :
+  {
+    "title"       : "HDC-1929",
+    "type"        : "ratio",
+    "description" : "A ratio query.",
+    "xml_path"    : "ReportingCategories.PDC_HDC-1929"
+  },
+  "HDC-1930" :
+  {
+    "title"       : "HDC-1930",
+    "type"        : "ratio",
+    "description" : "A ratio query.",
+    "xml_path"    : "ReportingCategories.PDC_HDC-1930"
   }
 }
