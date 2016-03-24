@@ -6,7 +6,7 @@
     "description" : "Population profile in ten year ranges.",
     "map"         :
     {
-      "0" : "ZeroToNine",
+      "0"  : "ZeroToNine",
       "10" : "TenToNineteen",
       "20" : "TwentyToTwentyNine",
       "30" : "ThirtyToThirtyNine",
@@ -15,7 +15,8 @@
       "60" : "SixtyToSixtyNine",
       "70" : "SeventyToSeventyNine",
       "80" : "EightyToEightyNine",
-      "90" : "NinetyToNinetyNineAndOlder"
+      "90" : "NinetyToNinetyNineAndOlder",
+      "UN" : "UnspecifiedAge"
     }
   },
   "HDC-0954" :
