@@ -1,0 +1,7 @@
+{
+  "port": 22,
+  "host": "localhost",
+  "username": "servo",
+  "privateKeyPath": "/home/programmers/.ssh/id_rsa",
+  "destinationPath": "/home/servo/uploads/"
+}

@@ -13,6 +13,8 @@
     "kerberos" : "0.0.12",
     "mongodb": "~2.0",
     "node-uuid" : "1.4.7",
-    "js2xmlparser": "1.0.0"
+    "js2xmlparser": "1.0.0",
+    "scp2": "0.2.2",
+    "dateformat": "1.0.12"
   }
 }

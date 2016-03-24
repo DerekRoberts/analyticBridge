@@ -37,9 +37,7 @@ function xml_builder( json_template, all_doctors ){
   xml_builder.create( json_template, all_doctors, function( error, results ){
     if( error ){ throw new Error( error )}
 
-    //TODO: Use names and multiple file saves
-    console.log( results[ 0 ]);
-    require( 'fs' ).writeFileSync( './scorecards/cpsid.xml', results[ 0 ]);
+    // No further work is required as xml_builder sends any scorecard(s) created
   });
 }
 
