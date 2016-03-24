@@ -1,5 +1,5 @@
-# HDC XML Exporter
+# HDC Analytic Bridge
 
-## Exports E2E Queries from MongoDB to XML
+## Exports Analytic Data from hQuery to HDC/AMCAREv3
 
 Details coming soon
