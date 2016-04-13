@@ -3,5 +3,7 @@
   "host": "localhost",
   "username": "servo",
   "privateKeyPath": "/home/programmers/.ssh/id_rsa",
-  "destinationPath": "/home/servo/uploads/"
+  "destinationPath": "/home/servo/uploads/",
+  "saveLocal": false,
+  "saveLocalPath" : "/home/programmers/scorecards/"
 }
