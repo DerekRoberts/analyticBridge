@@ -3,27 +3,9 @@
   {
     "pid"         : "cpsid",
     "doctor"      : "cpsid",
-    "export_as"   : "El Testomundo",
+    "export_as"   : "Sample10",
     "msp"         : "mspid",
     "cpsid"       : "cpsid",
     "clinic"      : "100"
-  },
-  "Claw" :
-  {
-    "pid"         : "abc123==worldDomination",
-    "doctor"      : "Claw",
-    "export_as"   : "Dr. Cornelius M. Claw Jr.",
-    "msp"         : "00666",
-    "cpsid"       : "66600",
-    "clinic"      : "101"
-  },
-  "McNinja" :
-  {
-    "pid"         : "llama!Walrus?Cheese#",
-    "doctor"      : "McNinja",
-    "export_as"   : "Dr. Patrick McNinja",
-    "msp"         : "12345",
-    "cpsid"       : "54321",
-    "clinic"      : "102"
   }
 }
