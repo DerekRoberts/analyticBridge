@@ -5,5 +5,5 @@
   "privateKeyPath": "/home/programmers/.ssh/id_rsa",
   "destinationPath": "/home/servo/uploads/",
   "saveLocal": true,
-  "saveLocalPath" : "/app/scorecards/"
+  "saveLocalPath" : "/vagrant/analyticBridge/scorecards/"
 }

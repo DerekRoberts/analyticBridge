@@ -47,16 +47,23 @@ function doc_builder( results ){
 
   doctors.forEach( function( doc ){
 
-    // Create map for doc name, header, PatientCounts and ReportingCategories
+    // Create map for doc name, header, PatientCounts, ContactCounts and ReportingCategories
     doc_data[ doc ] = [];
     doc_data[ doc ][ 'header' ] = headers.raw[ doc ];
     doc_data[ doc ][ 'PatientCounts' ] = [];
+    doc_data[ doc ][ 'ContactCounts' ] = [];
     doc_data[ doc ][ 'ReportingCategories' ] = [];
 
     // If there are PatientCounts, add them
     if( results[ doc ] && results[ doc ][ 'PatientCounts' ]){
       doc_data[ doc ][ 'PatientCounts' ]= results[ doc ][ 'PatientCounts' ];
       delete results[ doc ][ 'PatientCounts' ];
+    }
+
+    // If there are ContactCounts, add them
+    if( results[ doc ] && results[ doc ][ 'ContactCounts' ]){
+      doc_data[ doc ][ 'ContactCounts' ]= results[ doc ][ 'ContactCounts' ];
+      delete results[ doc ][ 'ContactCounts' ];
     }
 
     // If there are ReportingCategories, add them

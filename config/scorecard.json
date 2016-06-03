@@ -80,5 +80,59 @@
         "UnspecifiedAge" : "Value Not Specified"
       }
     }
+  },
+  "ContactCounts" :
+  {
+    "Male" :
+    {
+      "TenYearRanges" :
+      {
+        "ZeroToNine" : "Value Not Specified",
+        "TenToNineteen" : "Value Not Specified",
+        "TwentyToTwentyNine" : "Value Not Specified",
+        "ThirtyToThirtyNine" : "Value Not Specified",
+        "FortyToFortyNine" : "Value Not Specified",
+        "FiftyToFiftyNine" : "Value Not Specified",
+        "SixtyToSixtyNine" : "Value Not Specified",
+        "SeventyToSeventyNine" : "Value Not Specified",
+        "EightyToEightyNine" : "Value Not Specified",
+        "NinetyToNinetyNineAndOlder" : "Value Not Specified",
+        "UnspecifiedAge" : "Value Not Specified"
+      }
+    },
+    "Female" :
+    {
+      "TenYearRanges" :
+      {
+        "ZeroToNine" : "Value Not Specified",
+        "TenToNineteen" : "Value Not Specified",
+        "TwentyToTwentyNine" : "Value Not Specified",
+        "ThirtyToThirtyNine" : "Value Not Specified",
+        "FortyToFortyNine" : "Value Not Specified",
+        "FiftyToFiftyNine" : "Value Not Specified",
+        "SixtyToSixtyNine" : "Value Not Specified",
+        "SeventyToSeventyNine" : "Value Not Specified",
+        "EightyToEightyNine" : "Value Not Specified",
+        "NinetyToNinetyNineAndOlder" : "Value Not Specified",
+        "UnspecifiedAge" : "Value Not Specified"
+      }
+    },
+    "Unspecified" :
+    {
+      "TenYearRanges" :
+      {
+        "ZeroToNine" : "Value Not Specified",
+        "TenToNineteen" : "Value Not Specified",
+        "TwentyToTwentyNine" : "Value Not Specified",
+        "ThirtyToThirtyNine" : "Value Not Specified",
+        "FortyToFortyNine" : "Value Not Specified",
+        "FiftyToFiftyNine" : "Value Not Specified",
+        "SixtyToSixtyNine" : "Value Not Specified",
+        "SeventyToSeventyNine" : "Value Not Specified",
+        "EightyToEightyNine" : "Value Not Specified",
+        "NinetyToNinetyNineAndOlder" : "Value Not Specified",
+        "UnspecifiedAge" : "Value Not Specified"
+      }
+    }
   }
 }
