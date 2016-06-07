@@ -10,7 +10,7 @@ var doc_data = [];
 // Combines ReportingCategories queries into single objects
 function result_combiner( result_set ){
   var result_combined = {};
-  if( result_set.length && result_set[0].category === "Ratio" ){
+  if( result_set.length && result_set[0].type === "Ratio" ){
 
     var date     = result_set[0].date;
     var result   = result_set[0].result;
@@ -69,7 +69,7 @@ function doc_builder( results ){
     // If there are ReportingCategories, add them
     if( typeof results[ doc ] == 'object' && Object.keys(results[ doc ])){
       Object.keys( results[ doc ]).forEach( function( query ){
-        if( results[ doc ][ query ][ 0 ].category === 'Ratio' ){
+        if( results[ doc ][ query ][ 0 ].type === 'Ratio' ){
           doc_data[ doc ][ 'ReportingCategories' ][ query ] = result_combiner( results[ doc ][ query ]);
         }
       });
