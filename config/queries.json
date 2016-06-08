@@ -208,6 +208,34 @@
     "description" : "DQ-UndocumentedBirthdate",
     "xml_path"    : "ReportingCategories.HDC-0834"
   },
+  "HDC-0836" :
+  {
+    "title"       : "HDC-0836",
+    "type"        : "ratio",
+    "description" : "DQ-UndocumentedBirthdate",
+    "xml_path"    : "ReportingCategories.HDC-0836"
+  },
+  "HDC-0837" :
+  {
+    "title"       : "HDC-0837",
+    "type"        : "ratio",
+    "description" : "DQ-UndocumentedBirthdate",
+    "xml_path"    : "ReportingCategories.HDC-0837"
+  },
+  "HDC-0838" :
+  {
+    "title"       : "HDC-0838",
+    "type"        : "ratio",
+    "description" : "DQ-UndocumentedBirthdate",
+    "xml_path"    : "ReportingCategories.HDC-0838"
+  },
+  "HDC-0840" :
+  {
+    "title"       : "HDC-0840",
+    "type"        : "ratio",
+    "description" : "DQ-UndocumentedBirthdate",
+    "xml_path"    : "ReportingCategories.HDC-0840"
+  },
   "HDC-0842" :
   {
     "title"       : "HDC-0842",
@@ -242,6 +270,13 @@
     "type"        : "ratio",
     "description" : "DQ-bpCheck21+",
     "xml_path"    : "ReportingCategories.HDC-0865"
+  },
+  "HDC-0882" :
+  {
+    "title"       : "HDC-0882",
+    "type"        : "ratio",
+    "description" : "DQ-UndocumentedBirthdate",
+    "xml_path"    : "ReportingCategories.HDC-0882"
   },
   "HDC-0889" :
   {
