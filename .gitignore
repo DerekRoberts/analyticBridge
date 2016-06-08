@@ -1,6 +1,7 @@
 # This repo only #
 ##################
 
+*.sh
 *.tar
 *.gzip
 *.tar.gzip
