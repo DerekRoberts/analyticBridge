@@ -11,19 +11,12 @@ var doc_data = [];
 function result_combiner( result_set ){
   var result_combined = {};
 
-  // Skip over message/error entries
-  var i = 0;
-  var type = result_set[ i ].type;
-  while( type === 'Message' ){
-    type = result_set[ ++i ].type;
-  }
-
   // Combine ratio results
-  if( result_set.length && type === "Ratio" ){
+  if( result_set.length && result_set[ 0 ].type === "Ratio" ){
 
-    var date     = result_set[ i ].date;
-    var result   = result_set[ i ].result;
-    var value    = result_set[ i ].value;
+    var date     = result_set[ 0 ].date;
+    var result   = result_set[ 0 ].result;
+    var value    = result_set[ 0 ].value;
 
     // Save date in output structure
     result_combined['date'] = date;
@@ -79,18 +72,21 @@ function doc_builder( results ){
     if( typeof results[ doc ] == 'object' && Object.keys(results[ doc ])){
       Object.keys( results[ doc ]).forEach( function( query ){
 
-        // Skip over message/error entries
-        var i = 0;
-        var type = results[ doc ][ query ][ i ].type;
-        while( type === 'Message' ){
-          type = results[ doc ][ query ][ ++i ].type;
-        }
+        // Filter out non-essential result objects (not numerator or denominator)
+        results[ doc ][ query ] = results[ doc ][ query ].filter( function( execObj ){
+          if(
+            ( execObj.result === 'denominator' )||
+            ( execObj.result === 'numerator' )
+          ){
+            return true;
+          }
+        });
 
-        if( type === 'Ratio' ){
+        if( results[ doc ][ query ][ 0 ].type === 'Ratio' ){
           doc_data[ doc ][ 'ReportingCategories' ][ query ] = result_combiner( results[ doc ][ query ]);
         }
         else {
-          console.log( "Rejected: "+ query +", type: "+type);
+          console.log( "Rejected: "+ query +", type: "+results[ doc ][ query ][ 0 ]);
         }
       });
     }
