@@ -212,28 +212,28 @@
   {
     "title"       : "HDC-0836",
     "type"        : "ratio",
-    "description" : "DQ-UndocumentedBirthdate",
+    "description" : "DQ-CodedMedications",
     "xml_path"    : "ReportingCategories.HDC-0836"
   },
   "HDC-0837" :
   {
     "title"       : "HDC-0837",
     "type"        : "ratio",
-    "description" : "DQ-UndocumentedBirthdate",
+    "description" : "DQ-PrescriptionFrequency",
     "xml_path"    : "ReportingCategories.HDC-0837"
   },
   "HDC-0838" :
   {
     "title"       : "HDC-0838",
     "type"        : "ratio",
-    "description" : "DQ-UndocumentedBirthdate",
+    "description" : "DQ-NoMeds",
     "xml_path"    : "ReportingCategories.HDC-0838"
   },
   "HDC-0840" :
   {
     "title"       : "HDC-0840",
     "type"        : "ratio",
-    "description" : "DQ-UndocumentedBirthdate",
+    "description" : "DQ-CodedConditions",
     "xml_path"    : "ReportingCategories.HDC-0840"
   },
   "HDC-0842" :
@@ -275,7 +275,7 @@
   {
     "title"       : "HDC-0882",
     "type"        : "ratio",
-    "description" : "DQ-UndocumentedBirthdate",
+    "description" : "DQ-PatientsWithACondition",
     "xml_path"    : "ReportingCategories.HDC-0882"
   },
   "HDC-0889" :
