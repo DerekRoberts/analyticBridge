@@ -10,11 +10,20 @@ var doc_data = [];
 // Combines ReportingCategories queries into single objects
 function result_combiner( result_set ){
   var result_combined = {};
-  if( result_set.length && result_set[0].type === "Ratio" ){
 
-    var date     = result_set[0].date;
-    var result   = result_set[0].result;
-    var value    = result_set[0].value;
+  // Skip over message/error entries
+  var i = 0;
+  var type = result_set[ i ].type;
+  while( type === 'Message' ){
+    type = result_set[ ++i ].type;
+  }
+
+  // Combine ratio results
+  if( result_set.length && type === "Ratio" ){
+
+    var date     = result_set[ i ].date;
+    var result   = result_set[ i ].result;
+    var value    = result_set[ i ].value;
 
     // Save date in output structure
     result_combined['date'] = date;
@@ -69,11 +78,23 @@ function doc_builder( results ){
     // If there are ReportingCategories, add them
     if( typeof results[ doc ] == 'object' && Object.keys(results[ doc ])){
       Object.keys( results[ doc ]).forEach( function( query ){
-        if( results[ doc ][ query ][ 0 ].type === 'Ratio' ){
+
+        // Skip over message/error entries
+        var i = 0;
+        var type = results[ doc ][ query ][ i ].type;
+        while( type === 'Message' ){
+          type = results[ doc ][ query ][ ++i ].type;
+        }
+
+        if( type === 'Ratio' ){
           doc_data[ doc ][ 'ReportingCategories' ][ query ] = result_combiner( results[ doc ][ query ]);
+        }
+        else {
+          console.log( "Rejected: "+ query +", type: "+type);
         }
       });
     }
+
   });
 
   // Create XML files
