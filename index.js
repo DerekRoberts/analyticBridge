@@ -4,8 +4,12 @@ var scorecard = require( './config/scorecard.json' );
 // Raw doctor data for XML headers
 var headers = require( './lib/headers.js' );
 
+// Query list, with types and xml paths
+var queryList = require('./lib/query_list.js');
+
 // Store processed doctor and query data
 var doc_data = [];
+
 
 // Combines ReportingCategories queries into single objects
 function result_combiner( result_set ){
@@ -33,6 +37,7 @@ function result_combiner( result_set ){
   return result_set;
 }
 
+
 // Combine template and doctor data into scorecards
 function xml_builder( json_template, all_doctors ){
   var xml_builder = require('./lib/xml_builder.js');
@@ -43,29 +48,32 @@ function xml_builder( json_template, all_doctors ){
   });
 }
 
+
 // Build data structure with results organized by doctor
 function doc_builder( results ){
   var doctors = headers.doctors();
+
+  // Get titles for patient and contact counts
+  var titlePatientCounts = queryList.findTitleByXmlPath( 'PatientCounts' );
+  var titleContactCounts = queryList.findTitleByXmlPath( 'ContactCounts' );
 
   doctors.forEach( function( doc ){
 
     // Create map for doc name, header, PatientCounts, ContactCounts and ReportingCategories
     doc_data[ doc ] = [];
     doc_data[ doc ][ 'header' ] = headers.raw[ doc ];
-    doc_data[ doc ][ 'PatientCounts' ] = [];
-    doc_data[ doc ][ 'ContactCounts' ] = [];
     doc_data[ doc ][ 'ReportingCategories' ] = [];
 
     // If there are PatientCounts, add them
-    if( results[ doc ] && results[ doc ][ 'PatientCounts' ]){
-      doc_data[ doc ][ 'PatientCounts' ]= results[ doc ][ 'PatientCounts' ];
-      delete results[ doc ][ 'PatientCounts' ];
+    if( results[ doc ] && results[ doc ][ titlePatientCounts ]){
+      doc_data[ doc ][ 'PatientCounts' ]= results[ doc ][ titlePatientCounts ];
+      delete results[ doc ][ titlePatientCounts ];
     }
 
     // If there are ContactCounts, add them
-    if( results[ doc ] && results[ doc ][ 'ContactCounts' ]){
-      doc_data[ doc ][ 'ContactCounts' ]= results[ doc ][ 'ContactCounts' ];
-      delete results[ doc ][ 'ContactCounts' ];
+    if( results[ doc ] && results[ doc ][ titleContactCounts ]){
+      doc_data[ doc ][ 'ContactCounts' ]= results[ doc ][ titleContactCounts ];
+      delete results[ doc ][ titleContactCounts ];
     }
 
     // If there are ReportingCategories, add them
@@ -98,13 +106,6 @@ function doc_builder( results ){
   return doc_data;
 }
 
-// Obtain queries, specified in ./lib/queries.json
-var executions = require( './lib/executions.js' );
-executions.executions( function( error, results ){
-  if( error ){ throw new Error( error )}
-
-  return doc_builder( results );
-});
 
 // Pretty print a scorecard
 function toXml( completed_scorecard ){
@@ -112,3 +113,12 @@ function toXml( completed_scorecard ){
   var js2xmlparser = require( "js2xmlparser" );
   return js2xmlparser( "ScoreCard", completed_scorecard );
 }
+
+
+// Obtain queries, specified in ./lib/queries.json
+var executions = require( './lib/executions.js' );
+executions.executions( function( error, results ){
+  if( error ){ throw new Error( error )}
+
+  return doc_builder( results );
+});
