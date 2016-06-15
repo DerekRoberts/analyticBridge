@@ -1,7 +1,6 @@
 {
   "HDC-0001" :
   {
-    "title"       : "HDC-0001",
     "type"        : "TenYearRanges",
     "description" : "PatientCounts",
     "xml_path"    : "PatientCounts",
@@ -22,441 +21,378 @@
   },
   "HDC-0004" :
   {
-    "title"       : "HDC-0004",
     "type"        : "Ratio",
     "description" : "UndocumentedBirthdate",
     "xml_path"    : "ReportingCategories.HDC-0004"
   },
   "HDC-0009" :
   {
-    "title"       : "HDC-0009",
     "type"        : "Ratio",
     "description" : "bmi_map_20",
     "xml_path"    : "ReportingCategories.HDC-0009"
   },
   "HDC-0014" :
   {
-    "title"       : "HDC-0014",
     "type"        : "Ratio",
     "description" : "PH-pneumococcalMap",
     "xml_path"    : "ReportingCategories.HDC-0014"
   },
   "HDC-0020" :
   {
-    "title"       : "HDC-0020",
     "type"        : "Ratio",
     "description" : "PH-recentColonScreening",
     "xml_path"    : "ReportingCategories.Fecal_occult_blood_in_last_2_yrs_age_50To74"
   },
   "HDC-0022" :
   {
-    "title"       : "HDC-0022",
     "type"        : "Ratio",
     "description" : "FastingBloodSugar",
     "xml_path"    : "ReportingCategories.Fasting_blood_sugar_in_last_3_yrs_age_GreaterThan_45"
   },
   "HDC-0025" :
   {
-    "title"       : "HDC-0025",
     "type"        : "Ratio",
     "description" : "DiabetesHgbA1C",
     "xml_path"    : "ReportingCategories.Diabetics_with_HGBA1C_in_last_6_mo"
   },
   "HDC-0026" :
   {
-    "title"       : "HDC-0026",
     "type"        : "Ratio",
     "description" : "DiabetesHgbA1CValue",
     "xml_path"    : "ReportingCategories.HGBA1C_in_last_yr_LessThanOrEqualTo_7Point0"
   },
   "HDC-0027" :
   {
-    "title"       : "HDC-0027",
     "type"        : "Ratio",
     "description" : "DiabetesLDLValue",
     "xml_path"    : "ReportingCategories.LDL_in_last_yr_LessThanOrEqualTo_2Point5"
   },
   "HDC-0028" :
   {
-    "title"       : "HDC-0028",
     "type"        : "Ratio",
     "description" : "DiabetesBP",
     "xml_path"    : "ReportingCategories.Diabetes_And_BP_LessThanOrEqualTo_130_80_in_last_yr"
   },
   "HDC-0053" :
   {
-    "title"       : "HDC-0053",
     "type"        : "Ratio",
     "description" : "PP-ppMap5+",
     "xml_path"    : "ReportingCategories.Pharmacology_65Plus_And_5Plus_medications"
   },
   "HDC-0054" :
   {
-    "title"       : "HDC-0054",
     "type"        : "Ratio",
     "description" : "PP-ppMap10+",
     "xml_path"    : "ReportingCategories.Pharmacology_65Plus_And_10Plus_medications"
   },
   "HDC-0056" :
   {
-    "title"       : "HDC-0056",
     "type"        : "Ratio",
     "description" : "PP-renalMap65",
     "xml_path"    : "ReportingCategories.HDC-0056"
   },
   "HDC-0057" :
   {
-    "title"       : "HDC-0057",
     "type"        : "Ratio",
     "description" : "PP-primaryStatinMap65",
     "xml_path"    : "ReportingCategories.HDC-0057"
   },
   "HDC-0058" :
   {
-    "title"       : "HDC-0058",
     "type"        : "Ratio",
     "description" : "PP-secondaryStatinMap65",
     "xml_path"    : "ReportingCategories.HDC-0058"
   },
   "HDC-0602" :
   {
-    "title"       : "HDC-0602",
     "type"        : "Ratio",
     "description" : "DQ-Obesity-last2years",
     "xml_path"    : "ReportingCategories.HDC-0602"
   },
   "HDC-0732" :
   {
-    "title"       : "HDC-0732",
     "type"        : "Ratio",
     "description" : "ChronicPain",
     "xml_path"    : "ReportingCategories.HDC-0732"
   },
   "HDC-0733" :
   {
-    "title"       : "HDC-0733",
     "type"        : "Ratio",
     "description" : "PR-chronicPainAndOpioids",
     "xml_path"    : "ReportingCategories.HDC-0733"
   },
   "HDC-0734" :
   {
-    "title"       : "HDC-0734",
     "type"        : "Ratio",
     "description" : "PR-opioidsWithoutChronicPain",
     "xml_path"    : "ReportingCategories.HDC-0734"
   },
   "HDC-0739" :
   {
-    "title"       : "HDC-0739",
     "type"        : "Ratio",
     "description" : "PR-chronicPainAndDepression",
     "xml_path"    : "ReportingCategories.HDC-0739"
   },
   "HDC-0743" :
   {
-    "title"       : "HDC-0743",
     "type"        : "Ratio",
     "description" : "RaOaLbp",
     "xml_path"    : "ReportingCategories.HDC-0743"
   },
   "HDC-0753" :
   {
-    "title"       : "HDC-0753",
     "type"        : "Ratio",
     "description" : "PR-oseteoarthritisAcetaminophen",
     "xml_path"    : "ReportingCategories.HDC-0753"
   },
   "HDC-0761B" :
   {
-    "title"       : "HDC-0761B",
     "type"        : "Ratio",
     "description" : "EOL-frailty55",
     "xml_path"    : "ReportingCategories.HDC-0761B"
   },
   "HDC-0761" :
   {
-    "title"       : "HDC-0761",
     "type"        : "Ratio",
     "description" : "EOL-55+",
     "xml_path"    : "ReportingCategories.HDC-0761"
   },
   "HDC-0831" :
   {
-    "title"       : "HDC-0831",
     "type"        : "Ratio",
     "description" : "DQ-EncounterFrequency",
     "xml_path"    : "ReportingCategories.HDC-0831"
   },
   "HDC-0832" :
   {
-    "title"       : "HDC-0832",
     "type"        : "Ratio",
     "description" : "DQ-DocumentedGender",
     "xml_path"    : "ReportingCategories.HDC-0832"
   },
   "HDC-0833" :
   {
-    "title"       : "HDC-0833",
     "type"        : "Ratio",
     "description" : "DQ-InvalidBirthdate",
     "xml_path"    : "ReportingCategories.HDC-0833"
   },
   "HDC-0834" :
   {
-    "title"       : "HDC-0834",
     "type"        : "Ratio",
     "description" : "DQ-UndocumentedBirthdate",
     "xml_path"    : "ReportingCategories.HDC-0834"
   },
   "HDC-0836" :
   {
-    "title"       : "HDC-0836",
     "type"        : "Ratio",
     "description" : "DQ-CodedMedications",
     "xml_path"    : "ReportingCategories.HDC-0836"
   },
   "HDC-0837" :
   {
-    "title"       : "HDC-0837",
     "type"        : "Ratio",
     "description" : "DQ-PrescriptionFrequency",
     "xml_path"    : "ReportingCategories.HDC-0837"
   },
   "HDC-0838" :
   {
-    "title"       : "HDC-0838",
     "type"        : "Ratio",
     "description" : "DQ-NoMeds",
     "xml_path"    : "ReportingCategories.HDC-0838"
   },
   "HDC-0840" :
   {
-    "title"       : "HDC-0840",
     "type"        : "Ratio",
     "description" : "DQ-CodedConditions",
     "xml_path"    : "ReportingCategories.HDC-0840"
   },
   "HDC-0842" :
   {
-    "title"       : "HDC-0842",
     "type"        : "Ratio",
     "description" : "DQ-diabetes12+",
     "xml_path"    : "ReportingCategories.HDC-0842"
   },
   "HDC-0843" :
   {
-    "title"       : "HDC-0843",
     "type"        : "Ratio",
     "description" : "DQ-tiotropiumAndCOPD",
     "xml_path"    : "ReportingCategories.HDC-0843"
   },
   "HDC-0845" :
   {
-    "title"       : "HDC-0845",
     "type"        : "Ratio",
     "description" : "DQ-levothroxineAndHypothyroidism",
     "xml_path"    : "ReportingCategories.HDC-0845"
   },
   "HDC-0846" :
   {
-    "title"       : "HDC-0846",
     "type"        : "Ratio",
     "description" : "DQ-antigoutWithGout",
     "xml_path"    : "ReportingCategories.HDC-0846"
   },
   "HDC-0865" :
   {
-    "title"       : "HDC-0865",
     "type"        : "Ratio",
     "description" : "DQ-bpCheck21+",
     "xml_path"    : "ReportingCategories.HDC-0865"
   },
   "HDC-0882" :
   {
-    "title"       : "HDC-0882",
     "type"        : "Ratio",
     "description" : "DQ-PatientsWithACondition",
     "xml_path"    : "ReportingCategories.HDC-0882"
   },
   "HDC-0889" :
   {
-    "title"       : "HDC-0889",
     "type"        : "Ratio",
     "description" : "DQ-bmiCheck21+",
     "xml_path"    : "ReportingCategories.HDC-0889"
   },
   "HDC-0917" :
   {
-    "title"       : "HDC-0917",
     "type"        : "Ratio",
     "description" : "PH-cervixScreening",
     "xml_path"    : "ReportingCategories.HDC-0917"
   },
   "HDC-0934" :
   {
-    "title"       : "HDC-0934",
     "type"        : "Ratio",
     "description" : "COPDandPneumococcal",
     "xml_path"    : "ReportingCategories.COPD_and_pneumococcal_vaccine"
   },
   "HDC-0943" :
   {
-    "title"       : "HDC-0943",
     "type"        : "Ratio",
     "description" : "PH-recentInfluencaVacc65+",
     "xml_path"    : "ReportingCategories.Influenza_Vac_65Plus"
   },
   "HDC-0954" :
   {
-    "title"       : "HDC-0954",
     "type"        : "Ratio",
     "description" : "PH-chronicKidneyDisease",
     "xml_path"    : "ReportingCategories.HDC-0954"
   },
   "HDC-0955" :
   {
-    "title"       : "HDC-0955",
     "type"        : "Ratio",
     "description" : "PH-congestiveHeartFailure",
     "xml_path"    : "ReportingCategories.HDC-0955"
   },
   "HDC-0956" :
   {
-    "title"       : "HDC-0956",
     "type"        : "Ratio",
     "description" : "PH-asthma",
     "xml_path"    : "ReportingCategories.HDC-0956"
   },
   "HDC-0958" :
   {
-    "title"       : "HDC-0958",
     "type"        : "Ratio",
     "description" : "PH-chronicObstructivePulminaryDisease",
     "xml_path"    : "ReportingCategories.HDC-0958"
   },
   "HDC-0959" :
   {
-    "title"       : "HDC-0959",
     "type"        : "Ratio",
     "description" : "PH-depression",
     "xml_path"    : "ReportingCategories.HDC-0959"
   },
   "HDC-0960" :
   {
-    "title"       : "HDC-0960",
     "type"        : "Ratio",
     "description" : "PH-diabetes",
     "xml_path"    : "ReportingCategories.HDC-0960"
   },
   "HDC-0962" :
   {
-    "title"       : "HDC-0962",
     "type"        : "Ratio",
     "description" : "PH-hypertension",
     "xml_path"    : "ReportingCategories.HDC-0962"
   },
   "HDC-0964" :
   {
-    "title"       : "HDC-0964",
     "type"        : "Ratio",
     "description" : "PH-rheumatoid",
     "xml_path"    : "ReportingCategories.HDC-0964"
   },
   "HDC-0981" :
   {
-    "title"       : "HDC-0981",
     "type"        : "Ratio",
     "description" : "PH-hepC",
     "xml_path"    : "ReportingCategories.HDC-0981"
   },
   "HDC-0995" :
   {
-    "title"       : "HDC-0995",
     "type"        : "Ratio",
     "description" : "PH-recentMammogram50-70",
     "xml_path"    : "ReportingCategories.Screening_Mammogram_ages_50To70"
   },
   "HDC-1004" :
   {
-    "title"       : "HDC-1004",
     "type"        : "Ratio",
     "description" : "ObesityYouth",
     "xml_path"    : "ReportingCategories.HDC-1004"
   },
   "HDC-1135A" :
   {
-    "title"       : "HDC-1135A",
     "type"        : "Ratio",
     "description" : "LastLab-A1Clt7point1wDiabetes",
     "xml_path"    : "ReportingCategories.HDC-1135A"
   },
   "HDC-1135B" :
   {
-    "title"       : "HDC-1135B",
     "type"        : "Ratio",
     "description" : "Lab-A1C7point1to8point0wDiabetes",
     "xml_path"    : "ReportingCategories.HDC-1135B"
   },
   "HDC-1135C" :
   {
-    "title"       : "HDC-1135C",
     "type"        : "Ratio",
     "description" : "Lab-A1C8point1to9point0wDiabetes",
     "xml_path"    : "ReportingCategories.HDC-1135C"
   },
   "HDC-1135D" :
   {
-    "title"       : "HDC-1135D",
     "type"        : "Ratio",
     "description" : "Lab-A1Cgt9point0wDiabetes",
     "xml_path"    : "ReportingCategories.HDC-1135D"
   },
   "HDC-1149" :
   {
-    "title"       : "HDC-1149",
     "type"        : "Ratio",
     "description" : "PH-cervixScreening",
     "xml_path"    : "ReportingCategories.HDC-1149"
   },
   "HDC-1153" :
   {
-    "title"       : "HDC-1153",
     "type"        : "Ratio",
     "description" : "Lab-FBSorA1C45+",
     "xml_path"    : "ReportingCategories.HDC-1153"
   },
   "HDC-1154" :
   {
-    "title"       : "HDC-1154",
     "type"        : "Ratio",
     "description" : "PH-pneumovaxAdministered",
     "xml_path"    : "ReportingCategories.HDC-1154"
   },
   "HDC-1155" :
   {
-    "title"       : "HDC-1155",
     "type"        : "Ratio",
     "description" : "PH-tetanusVaccinations",
     "xml_path"    : "ReportingCategories.Pneumococcal_Vac_65Plus"
   },
   "HDC-1178" :
   {
-    "title"       : "HDC-1178",
     "type"        : "Ratio",
     "description" : "ElderlyPatients",
     "xml_path"    : "ReportingCategories.HDC-1178"
   },
   "HDC-1738" :
   {
-    "title"       : "HDC-1738",
     "type"        : "Ratio",
     "description" : "ActivePatients",
     "xml_path"    : "ReportingCategories.Active_Patient_Proportion_in_last_3_years"
   },
   "HDC-1740" :
   {
-    "title"       : "HDC-1740",
     "type"        : "TenYearRanges",
     "description" : "ContactCounts",
     "xml_path"    : "ContactCounts",
@@ -477,196 +413,168 @@
   },
   "HDC-1785" :
   {
-    "title"       : "HDC-1785",
     "type"        : "Ratio",
     "description" : "ObesityAdult",
     "xml_path"    : "ReportingCategories.HDC-1785"
   },
   "HDC-1786" :
   {
-    "title"       : "HDC-1786",
     "type"        : "Ratio",
     "description" : "PH-ischemicHeartDisease",
     "xml_path"    : "ReportingCategories.HDC-1786"
   },
   "HDC-1787" :
   {
-    "title"       : "HDC-1787",
     "type"        : "Ratio",
     "description" : "PH-cerebrovascularDisease",
     "xml_path"    : "ReportingCategories.HDC-1787"
   },
   "HDC-1788" :
   {
-    "title"       : "HDC-1788",
     "type"        : "Ratio",
     "description" : "PH-osteoarthritis",
     "xml_path"    : "ReportingCategories.HDC-1788"
   },
   "HDC-1899" :
   {
-    "title"       : "HDC-1899",
     "type"        : "Ratio",
     "description" : "DQ-Obesity-Youth-last2years",
     "xml_path"    : "ReportingCategories.BMI_or_WC_documentation_in_last_2_yrs_age_12To19"
   },
   "HDC-1900" :
   {
-    "title"       : "HDC-1900",
     "type"        : "Ratio",
     "description" : "DQ-Obesity-Adult-last2years",
     "xml_path"    : "ReportingCategories.BMI_or_WC_documented_in_last_2_yrs_age_GreaterThan19"
   },
   "HDC-1901" :
   {
-    "title"       : "HDC-1901",
     "type"        : "Ratio",
     "description" : "pneumococcalVaccinationElderly",
     "xml_path"    : "ReportingCategories.HDC-1901"
   },
   "HDC-1902" :
   {
-    "title"       : "HDC-1902",
     "type"        : "Ratio",
     "description" : "PH-colonScreening",
     "xml_path"    : "ReportingCategories.HDC-1902"
   },
   "HDC-1903" :
   {
-    "title"       : "HDC-1903",
     "type"        : "Ratio",
     "description" : "Lab-FBS46+",
     "xml_path"    : "ReportingCategories.HDC-1903"
   },
   "HDC-1904" :
   {
-    "title"       : "HDC-1904",
     "type"        : "Ratio",
     "description" : "Lab-A1CwDiabetes",
     "xml_path"    : "ReportingCategories.HDC-1904"
   },
   "HDC-1905" :
   {
-    "title"       : "HDC-1905",
     "type"        : "Ratio",
     "description" : "Lab-A1Clt7wDiabetes",
     "xml_path"    : "ReportingCategories.HDC-1905"
   },
   "HDC-1906" :
   {
-    "title"       : "HDC-1906",
     "type"        : "Ratio",
     "description" : "Lab-LDLlt2point5wDiabetes",
     "xml_path"    : "ReportingCategories.HDC-1906"
   },
   "HDC-1907" :
   {
-    "title"       : "HDC-1907",
     "type"        : "Ratio",
     "description" : "BloodPressure-Diabetes",
     "xml_path"    : "ReportingCategories.HDC-1907"
   },
   "HDC-1921" :
   {
-    "title"       : "HDC-1921",
     "type"        : "Ratio",
     "description" : "MU-MHG-CoA65+",
     "xml_path"    : "ReportingCategories.HDC-1921"
   },
   "HDC-1922" :
   {
-    "title"       : "HDC-1922",
     "type"        : "Ratio",
     "description" : "MU-AceInhibitor65+",
     "xml_path"    : "ReportingCategories.HDC-1922"
   },
   "HDC-1923" :
   {
-    "title"       : "HDC-1923",
     "type"        : "Ratio",
     "description" : "MU-PPI65+",
     "xml_path"    : "ReportingCategories.HDC-1923"
   },
   "HDC-1924" :
   {
-    "title"       : "HDC-1924",
     "type"        : "Ratio",
     "description" : "MU-BetaBlockers65+",
     "xml_path"    : "ReportingCategories.HDC-1924"
   },
   "HDC-1925" :
   {
-    "title"       : "HDC-1925",
     "type"        : "Ratio",
     "description" : "MU-DihydropyridineCalciumChannelBlocker65+",
     "xml_path"    : "ReportingCategories.HDC-1925"
   },
   "HDC-1926" :
   {
-    "title"       : "HDC-1926",
     "type"        : "Ratio",
     "description" : "MU-ThyroidHormone65+",
     "xml_path"    : "ReportingCategories.HDC-1926"
   },
   "HDC-1927" :
   {
-    "title"       : "HDC-1927",
     "type"        : "Ratio",
     "description" : "MU-NaturalOpiumAlkaloid65+",
     "xml_path"    : "ReportingCategories.HDC-1927"
   },
   "HDC-1928" :
   {
-    "title"       : "HDC-1928",
     "type"        : "Ratio",
     "description" : "MU-Angeotensin2Antagonist65+",
     "xml_path"    : "ReportingCategories.HDC-1928"
   },
   "HDC-1929" :
   {
-    "title"       : "HDC-1929",
     "type"        : "Ratio",
     "description" : "MU-Biguinide65+",
     "xml_path"    : "ReportingCategories.HDC-1929"
   },
   "HDC-1930" :
   {
-    "title"       : "HDC-1930",
     "type"        : "Ratio",
     "description" : "MU-Thiazide65+",
     "xml_path"    : "ReportingCategories.HDC-1930"
   },
   "HDC-1932" :
   {
-    "title"       : "HDC-1932",
     "type"        : "Ratio",
     "description" : "PH_chronicPainOpioids200+",
     "xml_path"    : "ReportingCategories.HDC-1932"
   },
   "HDC-1933" :
   {
-    "title"       : "HDC-1933",
     "type"        : "Ratio",
     "description" : "PH-chronicPainOpioids100-200",
     "xml_path"    : "ReportingCategories.HDC-1933"
   },
   "HDC-1934" :
   {
-    "title"       : "HDC-1934",
     "type"        : "Ratio",
     "description" : "PH-chronicPainOpioids50-100",
     "xml_path"    : "ReportingCategories.HDC-1934"
   },
   "HDC-1935" :
   {
-    "title"       : "HDC-1935",
     "type"        : "Ratio",
     "description" : "PH-chronicPainOpioids10-50",
     "xml_path"    : "ReportingCategories.HDC-1935"
   },
   "HDC-1936" :
   {
-    "title"       : "HDC-1936",
     "type"        : "Ratio",
     "description" : "PH-chronicPainOpioids0-10",
     "xml_path"    : "ReportingCategories.HDC-1936"
