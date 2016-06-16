@@ -1,3 +1,7 @@
+// Strict mode
+"use strict";
+
+
 // ScoreCard blank
 var scorecard = require( './config/scorecard.json' );
 
