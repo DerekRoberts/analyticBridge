@@ -22,9 +22,6 @@ var query_list = require( __libdir + 'query_list.js');
 // XML builder
 var xml_builder = require( __libdir + 'xml_builder.js');
 
-// JSON to XML parser
-var js2xmlparser = require( "js2xmlparser" );
-
 // Store processed doctor and query data
 var doc_data = [];
 
@@ -76,10 +73,9 @@ function doc_builder( results ){
 
   doctors.forEach( function( doc ){
 
-    // Create map for doc name, header, PatientCounts, ContactCounts and ReportingCategories
+    // Create doctor data object and header info
     doc_data[ doc ] = [];
     doc_data[ doc ][ 'header' ] = headers.raw[ doc ];
-    doc_data[ doc ][ 'ReportingCategories' ] = [];
 
     // If there are PatientCounts, add them
     if( results[ doc ] && results[ doc ][ titlePatientCounts ]){
@@ -95,6 +91,7 @@ function doc_builder( results ){
 
     // If there are ReportingCategories, add them
     if( typeof results[ doc ] == 'object' && Object.keys(results[ doc ])){
+      doc_data[ doc ][ 'ReportingCategories' ] = [];
       Object.keys( results[ doc ]).forEach( function( query ){
 
         // Filter out non-essential result objects (not numerator or denominator)
@@ -124,13 +121,7 @@ function doc_builder( results ){
 }
 
 
-// Pretty print a scorecard
-function toXml( completed_scorecard ){
-  return js2xmlparser( "ScoreCard", completed_scorecard );
-}
-
-
-// Obtain queries, specified in ./lib/queries.json
+// Obtain query executions
 executions.executions( function( error, results ){
   if( error ){ throw new Error( error )}
 
