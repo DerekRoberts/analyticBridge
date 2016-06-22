@@ -8,6 +8,7 @@
 *.zip
 *.rar
 .directory
+id_rsa
 node_modules/
 scorecards/*.xml
 
