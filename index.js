@@ -1,15 +1,29 @@
 // Strict mode
 "use strict";
 
+// Store run dir
+global.__configdir = __dirname + '/config/';
+global.__libdir    = __dirname + '/lib/';
+global.__savedir   = __dirname + '/scorecards/';
+
 
 // ScoreCard blank
-var scorecard = require( './config/scorecard.json' );
+var scorecard = require( __configdir + 'scorecard.json' );
 
-// Raw doctor data for XML headers
-var headers = require( './lib/headers.js' );
+// Mongo DB executions
+var executions = require( __libdir + 'executions.js' );
+
+// Doctor data for XML headers
+var headers = require( __libdir + 'headers.js' );
 
 // Query list, with types and xml paths
-var queryList = require('./lib/query_list.js');
+var query_list = require( __libdir + 'query_list.js');
+
+// XML builder
+var xml_builder = require( __libdir + 'xml_builder.js');
+
+// JSON to XML parser
+var js2xmlparser = require( "js2xmlparser" );
 
 // Store processed doctor and query data
 var doc_data = [];
@@ -43,12 +57,11 @@ function result_combiner( result_set ){
 
 
 // Combine template and doctor data into scorecards
-function xml_builder( json_template, all_doctors ){
-  var xml_builder = require('./lib/xml_builder.js');
+function createXML( json_template, all_doctors ){
   xml_builder.create( json_template, all_doctors, function( error, results ){
     if( error ){ throw new Error( error )}
 
-    // No further work is required as xml_builder sends any scorecard(s) created
+    // No further work is needed as xml_builder sends any scorecard(s) created
   });
 }
 
@@ -58,8 +71,8 @@ function doc_builder( results ){
   var doctors = headers.doctors();
 
   // Get titles for patient and contact counts
-  var titlePatientCounts = queryList.findTitleByXmlPath( 'PatientCounts' );
-  var titleContactCounts = queryList.findTitleByXmlPath( 'ContactCounts' );
+  var titlePatientCounts = query_list.findTitleByXmlPath( 'PatientCounts' );
+  var titleContactCounts = query_list.findTitleByXmlPath( 'ContactCounts' );
 
   doctors.forEach( function( doc ){
 
@@ -106,21 +119,18 @@ function doc_builder( results ){
   });
 
   // Create XML files
-  xml_builder( scorecard, doc_data );
+  createXML( scorecard, doc_data );
   return doc_data;
 }
 
 
 // Pretty print a scorecard
 function toXml( completed_scorecard ){
-
-  var js2xmlparser = require( "js2xmlparser" );
   return js2xmlparser( "ScoreCard", completed_scorecard );
 }
 
 
 // Obtain queries, specified in ./lib/queries.json
-var executions = require( './lib/executions.js' );
 executions.executions( function( error, results ){
   if( error ){ throw new Error( error )}
 
