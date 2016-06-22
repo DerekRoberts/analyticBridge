@@ -1,26 +1,21 @@
 // Strict mode
 "use strict";
 
-// Store directory paths
-global.__configdir = __dirname + '/config/';
-global.__libdir    = __dirname + '/lib/';
-global.__savedir   = __dirname + '/scorecards/';
-
 
 // ScoreCard blank
-var scorecard = require( __configdir + 'scorecard.json' );
+var scorecard = require( __dirname + '/config/' + 'scorecard.json' );
 
 // Mongo DB executions
-var executions = require( __libdir + 'executions.js' );
+var executions = require( __dirname + '/lib/' + 'executions.js' );
 
 // Doctor data for XML headers
-var headers = require( __libdir + 'headers.js' );
+var headers = require( __dirname + '/lib/' + 'headers.js' );
 
 // Query list, with types and xml paths
-var query_list = require( __libdir + 'query_list.js');
+var query_list = require( __dirname + '/lib/' + 'query_list.js');
 
 // XML builder
-var xml_builder = require( __libdir + 'xml_builder.js');
+var xml_builder = require( __dirname + '/lib/' + 'xml_builder.js');
 
 // Store processed doctor and query data
 var doc_data = [];
