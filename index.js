@@ -1,7 +1,7 @@
 // Strict mode
 "use strict";
 
-// Store run dir
+// Store directory paths
 global.__configdir = __dirname + '/config/';
 global.__libdir    = __dirname + '/lib/';
 global.__savedir   = __dirname + '/scorecards/';
