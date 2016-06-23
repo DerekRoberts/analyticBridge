@@ -4,6 +4,20 @@
 // Store app directory
 var savePath = __dirname + '/scorecards/';
 
+// Store home directory, depends on OS
+var homeDir;
+switch( process.platform ){
+  case 'linux':
+    homeDir = process.env[ 'HOME' ];
+    break;
+  case 'win32':
+    homeDir = process.env[ 'USERPROFILE'];
+    break;
+  default:
+    console.log( 'Unrecognized OS.  Treating current directory as HOMEDIR.' );
+    homeDir = __dirname;
+}
+
 // ScoreCard blank
 var scorecard = require( __dirname + '/config/' + 'scorecard.json' );
 
