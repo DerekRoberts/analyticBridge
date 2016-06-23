@@ -1,6 +1,8 @@
 // Strict mode
 "use strict";
 
+// Store app directory
+var savePath = __dirname + '/scorecards/';
 
 // ScoreCard blank
 var scorecard = require( __dirname + '/config/' + 'scorecard.json' );
@@ -50,7 +52,7 @@ function result_combiner( result_set ){
 
 // Combine template and doctor data into scorecards
 function createXML( json_template, all_doctors ){
-  xml_builder.create( json_template, all_doctors, function( error, results ){
+  xml_builder.create( json_template, all_doctors, savePath, function( error, results ){
     if( error ){ throw new Error( error )}
 
     // No further work is needed as xml_builder sends any scorecard(s) created
