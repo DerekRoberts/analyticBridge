@@ -1,22 +1,6 @@
 // Strict mode
 "use strict";
 
-// Store app directory
-var savePath = __dirname + '/scorecards/';
-
-// Store home directory, depends on OS
-var homeDir;
-switch( process.platform ){
-  case 'linux':
-    homeDir = process.env[ 'HOME' ];
-    break;
-  case 'win32':
-    homeDir = process.env[ 'USERPROFILE'];
-    break;
-  default:
-    console.log( 'Unrecognized OS.  Treating current directory as HOMEDIR.' );
-    homeDir = __dirname;
-}
 
 // ScoreCard blank
 var scorecard = require( __dirname + '/config/' + 'scorecard.json' );
@@ -66,7 +50,25 @@ function result_combiner( result_set ){
 
 // Combine template and doctor data into scorecards
 function createXML( json_template, all_doctors ){
-  xml_builder.create( json_template, all_doctors, savePath, function( error, results ){
+
+  // Store app directory
+  var savePath = __dirname + '/scorecards/';
+
+  // Store home directory, depends on OS
+  var homeDir;
+  switch( process.platform ){
+    case 'linux':
+      homeDir = process.env[ 'HOME' ];
+      break;
+    case 'win32':
+      homeDir = process.env[ 'USERPROFILE'];
+      break;
+    default:
+      console.log( 'Unrecognized OS.  Treating current directory as HOMEDIR.' );
+      homeDir = __dirname;
+  }
+
+  xml_builder.create( json_template, all_doctors, savePath, homeDir, function( error, results ){
     if( error ){ throw new Error( error )}
 
     // No further work is needed as xml_builder sends any scorecard(s) created
