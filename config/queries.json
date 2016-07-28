@@ -19,6 +19,13 @@
       "UN" : "UnspecifiedAge"
     }
   },
+  "HDC-0002" :
+  {
+    "title"       : "HDC-0002",
+    "type"        : "ratio",
+    "description" : "Frailty",
+    "xml_path"    : "ReportingCategories.HDC-0002"
+  },
   "HDC-0004" :
   {
     "type"        : "Ratio",
@@ -77,13 +84,13 @@
   {
     "type"        : "Ratio",
     "description" : "PP-ppMap5+",
-    "xml_path"    : "ReportingCategories.Pharmacology_65Plus_And_5Plus_medications"
+    "xml_path"    : "ReportingCategories.HDC-0053"
   },
   "HDC-0054" :
   {
     "type"        : "Ratio",
     "description" : "PP-ppMap10+",
-    "xml_path"    : "ReportingCategories.Pharmacology_65Plus_And_10Plus_medications"
+    "xml_path"    : "ReportingCategories.HDC-0054"
   },
   "HDC-0056" :
   {
@@ -247,6 +254,13 @@
     "description" : "DQ-bmiCheck21+",
     "xml_path"    : "ReportingCategories.HDC-0889"
   },
+  "HDC-0919" :
+  {
+    "title"       : "HDC-0919",
+    "type"        : "ratio",
+    "description" : "HypertensionAndBPInLastYear",
+    "xml_path"    : "ReportingCategories.HDC-0919"
+  },
   "HDC-0917" :
   {
     "type"        : "Ratio",
@@ -331,6 +345,13 @@
     "description" : "ObesityYouth",
     "xml_path"    : "ReportingCategories.HDC-1004"
   },
+  "HDC-1134" :
+  {
+    "title"       : "HDC-1134",
+    "type"        : "ratio",
+    "description" : "INRMonitoring",
+    "xml_path"    : "ReportingCategories.HDC-1134"
+  },
   "HDC-1135A" :
   {
     "type"        : "Ratio",
@@ -354,6 +375,13 @@
     "type"        : "Ratio",
     "description" : "Lab-A1Cgt9point0wDiabetes",
     "xml_path"    : "ReportingCategories.HDC-1135D"
+  },
+  "HDC-1136" :
+  {
+    "title"       : "HDC-1136",
+    "type"        : "ratio",
+    "description" : "Lab-LDLlt2point6wDiabetes",
+    "xml_path"    : "ReportingCategories.HDC-1136"
   },
   "HDC-1149" :
   {
@@ -489,6 +517,13 @@
     "description" : "BloodPressure-Diabetes",
     "xml_path"    : "ReportingCategories.HDC-1907"
   },
+  "HDC-1918" :
+  {
+    "title"       : "HDC-1918",
+    "type"        : "ratio",
+    "description" : "ImmunizationClassification",
+    "xml_path"    : "ReportingCategories.HDC-1918"
+  },
   "HDC-1921" :
   {
     "type"        : "Ratio",
@@ -575,8 +610,50 @@
   },
   "HDC-1936" :
   {
-    "type"        : "Ratio",
+    "title"       : "HDC-1936",
+    "type"        : "ratio",
     "description" : "PH-chronicPainOpioids0-10",
     "xml_path"    : "ReportingCategories.HDC-1936"
+  },
+  "HDC-1941" :
+  {
+    "title"       : "HDC-1941",
+    "type"        : "count",
+    "description" : "medicationFrequencyDataQuality",
+    "map"         :
+    {
+      "0"  : "ZeroToNine",
+      "10" : "TenToNineteen",
+      "20" : "TwentyToTwentyNine",
+      "30" : "ThirtyToThirtyNine",
+      "40" : "FortyToFortyNine",
+      "50" : "FiftyToFiftyNine",
+      "60" : "SixtyToSixtyNine",
+      "70" : "SeventyToSeventyNine",
+      "80" : "EightyToEightyNine",
+      "90" : "NinetyToNinetyNineAndOlder",
+      "UN" : "UnspecifiedAge"
+    }
+  },
+  "HDC-1995" :
+  {
+    "title"       : "HDC-1995",
+    "type"        : "ratio",
+    "description" : "AntidepressantUse",
+    "xml_path"    : "ReportingCategories.HDC-1995"
+  },
+  "HDC-1996" :
+  {
+    "title"       : "HDC-1996",
+    "type"        : "ratio",
+    "description" : "AntipsychoticUse",
+    "xml_path"    : "ReportingCategories.HDC-1996"
+  },
+  "HDC-1997" :
+  {
+    "title"       : "HDC-1997",
+    "type"        : "ratio",
+    "description" : "AntibioticUse",
+    "xml_path"    : "ReportingCategories.HDC-1997"
   }
 }
