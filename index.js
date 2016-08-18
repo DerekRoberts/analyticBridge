@@ -2,141 +2,120 @@
 "use strict";
 
 
+var async = require('async');
+var moment = require('moment');
 // ScoreCard blank
-var scorecard = require( __dirname + '/config/' + 'scorecard.json' );
-
+var scorecardTemplate = require( __dirname + '/config/' + 'scorecard.json' );
 // Mongo DB executions
 var executions = require( __dirname + '/lib/' + 'executions.js' );
-
-// Doctor data for XML headers
-var headers = require( __dirname + '/lib/' + 'headers.js' );
-
+// Doctor data 
+var doctors = require( __dirname + '/lib/' + 'doctors.js' );
 // Query list, with types and xml paths
-var query_list = require( __dirname + '/lib/' + 'query_list.js');
+var queries = require( __dirname + '/lib/' + 'queries.js');
+var util = require( __dirname + '/lib/' + 'util.js');
+var scorecardPeriods = require( __dirname + '/lib/' + 'scorecardPeriods.js');
+var scorecardBuilder = require( __dirname + '/lib/' + 'scorecardBuilder.js');
+var scorecardExporter = require( __dirname + '/lib/' + 'scorecardExporter.js');
 
-// XML builder
-var xml_builder = require( __dirname + '/lib/' + 'xml_builder.js');
+/**
+ * Entry point for execution
+ */
+main();
 
-// Store processed doctor and query data
-var doc_data = [];
-
-
-// Combines ReportingCategories queries into single objects
-function result_combiner( result_set ){
-  var result_combined = {};
-
-  // Combine ratio results
-  if( result_set.length && result_set[ 0 ].type === "Ratio" ){
-
-    var date     = result_set[ 0 ].date;
-    var result   = result_set[ 0 ].result;
-    var value    = result_set[ 0 ].value;
-
-    // Save date in output structure
-    result_combined['date'] = date;
-    // Save numerator and denominator in output structure
-    // r.result should be either "numerator" or "denominator" for
-    // queries under "ReportingCategories"
-    result_set.forEach( function( r ){
-      result_combined[ r.result ] = r.value;
-    });
-
-    result_set = result_combined;
-    return result_combined;
-  }
-  return result_set;
-}
-
-
-// Combine template and doctor data into scorecards
-function createXML( json_template, all_doctors ){
-
-  // Store app directory
-  var savePath = __dirname + '/scorecards/';
-
-  // Store home directory, depends on OS
-  var homeDir;
-  switch( process.platform ){
-    case 'linux':
-      homeDir = process.env[ 'HOME' ];
-      break;
-    case 'win32':
-      homeDir = process.env[ 'USERPROFILE'];
-      break;
-    default:
-      console.log( 'Unrecognized OS.  Treating current directory as HOMEDIR.' );
-      homeDir = __dirname;
-  }
-
-  xml_builder.create( json_template, all_doctors, savePath, homeDir, function( error, results ){
+/**
+ * Function called as entry point for execution
+ */
+function main() {
+  // Obtain query execution data
+  var executionStart = moment();
+  executions.getAllData( function( error, data ){
     if( error ){ throw new Error( error )}
+    
+    // Get list of time periods for which to attempt to generate scorecards
+    var periods = scorecardPeriods.getScorecardPeriods();
+    // Get list of doctors for which to attempt to generate scorecards
+    var doctorList = doctors.getDoctors();
+    
+    var requests = []
+    var request;
+    // Prepare scorecard request for each combination of doctor and period
+    doctorList.forEach(function( doctor ){
+	periods.forEach(function( period ){
+	    request = {};
+	    request.doctor = doctor;
+	    request.period = period;
 
-    // No further work is needed as xml_builder sends any scorecard(s) created
-  });
-}
-
-
-// Build data structure with results organized by doctor
-function doc_builder( results ){
-  var doctors = headers.doctors();
-
-  // Get titles for patient and contact counts
-  var titlePatientCounts = query_list.findTitleByXmlPath( 'PatientCounts' );
-  var titleContactCounts = query_list.findTitleByXmlPath( 'ContactCounts' );
-
-  doctors.forEach( function( doc ){
-
-    // Create doctor data object and header info
-    doc_data[ doc ] = [];
-    doc_data[ doc ][ 'header' ] = headers.raw[ doc ];
-
-    // If there are PatientCounts, add them
-    if( results[ doc ] && results[ doc ][ titlePatientCounts ]){
-      doc_data[ doc ][ 'PatientCounts' ]= results[ doc ][ titlePatientCounts ];
-      delete results[ doc ][ titlePatientCounts ];
-    }
-
-    // If there are ContactCounts, add them
-    if( results[ doc ] && results[ doc ][ titleContactCounts ]){
-      doc_data[ doc ][ 'ContactCounts' ]= results[ doc ][ titleContactCounts ];
-      delete results[ doc ][ titleContactCounts ];
-    }
-
-    // If there are ReportingCategories, add them
-    if( typeof results[ doc ] == 'object' && Object.keys(results[ doc ])){
-      doc_data[ doc ][ 'ReportingCategories' ] = [];
-      Object.keys( results[ doc ]).forEach( function( query ){
-
-        // Filter out non-essential result objects (not numerator or denominator)
-        results[ doc ][ query ] = results[ doc ][ query ].filter( function( execObj ){
-          if(
-            ( execObj.result === 'denominator' )||
-            ( execObj.result === 'numerator' )
-          ){
-            return true;
+	    requests.push(request);
+	});
+    });
+    
+    // Process each scorecard request asynchronously in parallel for efficiency
+    async.each(requests, function(request, callback) {
+	processScorecardRequest(request.doctor, request.period, data, callback);
+    }, function(err) {
+        // if any of the scorecard request processing produced an error, err would equal that error
+        if( err ) {
+          // One of the iterations produced an error.
+          // All processing will now stop.
+          console.log('Scorecard processing halted due to error: ' + err);
+        } else {
+          console.log('All scorecard requests processed successfully');
+          
+          // Output execution time in a friendly manner
+          var executionDuration = moment.duration(moment().diff(executionStart));
+          if(executionDuration.asMinutes() >= 2.0) {
+              console.log("Completed in " + Math.ceil(executionDuration.asMinutes()) + " minutes");
+          } else if(executionDuration.asSeconds() >= 2.0) {
+              console.log("Completed in " + Math.ceil(executionDuration.asSeconds()) + " seconds");
+          } else {
+              console.log("Completed in " + Math.ceil(executionDuration.asMilliseconds()) + " milliseconds");
           }
-        });
-
-        if( results[ doc ][ query ][ 0 ].type === 'Ratio' ){
-          doc_data[ doc ][ 'ReportingCategories' ][ query ] = result_combiner( results[ doc ][ query ]);
+          
+          // Output possible cache savings time in a friendly manner
+          var cachingDuration = scorecardBuilder.getTotalSortTime();
+          if(cachingDuration.asMinutes() >= 2.0) {
+              console.log("Time spent on operations that could possibly be reduced by caching: " 
+        	      + Math.ceil(cachingDuration.asMinutes()) + " minutes");
+          } else if(cachingDuration.asSeconds() >= 2.0) {
+              console.log("Time spent on operations that could possibly be reduced by caching: " 
+        	      + Math.ceil(cachingDuration.asSeconds()) + " seconds");
+          } else {
+              console.log("Time spent on operations that could possibly be reduced by caching: " 
+        	      + Math.ceil(cachingDuration.asMilliseconds()) + " milliseconds");
+          }
         }
-        else {
-          console.log( "Rejected: "+ query +", type: "+results[ doc ][ query ][ 0 ]);
-        }
-      });
-    }
-
+    });
   });
-
-  // Create XML files
-  createXML( scorecard, doc_data );
-  return doc_data;
+    
 }
 
+/**
+ * Attempt to generate and export a scorecard based on the parameters passed
+ * 
+ * @param doctor
+ *                {string} CPSId of doctor for which to attempt to generate
+ *                scorecard
+ * @param period
+ *                {object} Time period containing start and end moment date
+ *                objects indicating the time period for which to attempt to
+ *                generate a scorecard
+ * @param {data}
+ *                Object containing all data from which the data for the
+ *                scorecard should be pulled
+ * @param callback
+ *                {function} Callback to be called when operation is complete.
+ *                Call with no argument if successful, pass error if error
+ *                occurred.
+ */
+function processScorecardRequest(doctor, period, data, callback) {
+    var scorecard = scorecardBuilder.createScorecard(scorecardTemplate, doctor, period, data);
+    
+    if(scorecard !== null) {
+	// We have a scorecard to export
+	scorecardExporter.exportScorecard(scorecard, doctor, period, callback);
+    } else {
+	console.log("Insufficient data to generate scorecard for " + period.end.format("YYYY-MM-DD"));
+	callback();
+    }
+}
 
-// Obtain query executions
-executions.executions( function( error, results ){
-  if( error ){ throw new Error( error )}
-
-  return doc_builder( results );
-});

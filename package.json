@@ -15,6 +15,9 @@
     "node-uuid" : "1.4.7",
     "js2xmlparser": "1.0.0",
     "scp2": "0.2.2",
-    "dateformat": "1.0.12"
+    "dateformat": "1.0.12",
+    "moment" : "2.14.1",
+    "jsdoc" : "3.4.0",
+    "async" : "2.0.1"
   }
 }
