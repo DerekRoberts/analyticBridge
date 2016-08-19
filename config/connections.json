@@ -10,6 +10,7 @@
       "port": 22,
       "host": "localhost",
       "username": "servo",
+      "maxConnections": 10,
       "saveLocal": true
     }
 }
