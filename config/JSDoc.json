@@ -1,0 +1,23 @@
+{
+    "opts": {
+	    "encoding": "utf8",               // same as -e utf8
+	    "destination": "./doc/",          // same as -d ./doc/
+	    "recurse": true                  // same as -r
+    },
+    "tags": {
+        "allowUnknownTags": true,
+        "dictionaries": ["jsdoc","closure"]
+    },
+    "source": {
+	    "include": [ "./index.js", "./lib"],
+	    "includePattern": ".+\\.js(doc)?$",
+	    "excludePattern": "(^|\\/|\\\\)_"
+    },
+
+    "plugins": [],
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false
+    }
+}
+
