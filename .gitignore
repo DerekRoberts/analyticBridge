@@ -12,6 +12,13 @@ id_rsa
 node_modules/
 scorecards/*.xml
 
+# Exclipse specific config files
+.project
+.settings/.jsdtscope
+.settings/org.eclipse.wst.jsdt.ui.superType.container
+.settings/org.eclipse.wst.jsdt.ui.superType.name
+.tern-project
+
 ########################
 ### GitHub Suggested ###
 ######################## https://gist.github.com/octocat/9257657#file-gitignore
