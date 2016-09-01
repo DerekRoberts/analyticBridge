@@ -49,10 +49,16 @@ function main() {
 	});
     });
     
-    // Process each scorecard request asynchronously in parallel for efficiency
-    async.each(requests, function(request, callback) {
+    // Process each scorecard request asynchronously in parallel for efficiency.
+    // Update: Tests indicate no performance gain from parallel processing in current 
+    // hardware and system environment. Process request sequentially to show
+    // continuous progress. 
+    async.eachLimit(requests, 1, function(request, callback) {
 	processScorecardRequest(request.doctor, request.period, data, callback);
     }, function(err) {
+	
+	scorecardExporter.closeConnection();
+	
         // if any of the scorecard request processing produced an error, err would equal that error
         if( err ) {
           // One of the iterations produced an error.
