@@ -21,7 +21,7 @@
       "60" : "SixtyToSixtyNine",
       "70" : "SeventyToSeventyNine",
       "80" : "EightyToEightyNine",
-      "90" : "NinetyToNinetyNineAndOlder",
+      "90" : "NinetyToOneHundredAndOlder",
       "UN" : "UnspecifiedAge"
     }
   },
@@ -447,7 +447,7 @@
       "60" : "SixtyToSixtyNine",
       "70" : "SeventyToSeventyNine",
       "80" : "EightyToEightyNine",
-      "90" : "NinetyToNinetyNineAndOlder",
+      "90" : "NinetyToOneHundredAndOlder",
       "UN" : "UnspecifiedAge"
     }
   },
