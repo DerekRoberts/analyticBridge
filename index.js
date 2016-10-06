@@ -118,10 +118,11 @@ function processScorecardRequest(doctor, period, data, callback) {
     
     if(scorecard !== null) {
 	// We have a scorecard to export
-	scorecardExporter.exportScorecard(scorecard, doctor, period, callback);
+    	scorecardExporter.exportScorecard(scorecard, doctor, period, callback);
     } else {
-	console.log("Insufficient data to generate scorecard for " + period.end.format("YYYY-MM-DD"));
-	callback();
+    	var docInfo = doctors.getDoctorInfo(doctor);
+    	console.log("Insufficient data to generate scorecard for " + docInfo.exportAs + " for " + period.end.format("YYYY-MM-DD"));
+    	callback();
     }
 }
 
