@@ -265,7 +265,7 @@
     "title"       : "HDC-0917",
     "type"        : "ratio",
     "description" : "PH-cervixScreening",
-    "xml_path"    : "ReportingCategories.HDC-0917"
+    "XMLPath"    : "ReportingCategories.HDC-0917"
   },
   "HDC-0919" :
   {
@@ -339,14 +339,14 @@
     "title"       : "HDC-0970",
     "type"        : "ratio",
     "description" : "PH-dependenceAlcohol",
-    "xml_path"    : "ReportingCategories.HDC-0970"
+    "XMLPath"    : "ReportingCategories.HDC-0970"
   },
   "HDC-0971" :
   {
     "title"       : "HDC-0971",
     "type"        : "ratio",
     "description" : "PH-dependenceDrugs",
-    "xml_path"    : "ReportingCategories.HDC-0971"
+    "XMLPath"    : "ReportingCategories.HDC-0971"
   },
   "HDC-0981" :
   {
@@ -647,70 +647,70 @@
     "title"       : "HDC-1940",
     "type"        : "ratio",
     "description" : "MU-Antidepressants65+",
-    "xml_path"    : "ReportingCategories.HDC-1940"
+    "XMLPath"    : "ReportingCategories.HDC-1940"
   },
   "HDC-1941" :
   {
     "title"       : "HDC-1941",
     "type"        : "ratio",
     "description" : "medicationFrequencyDataQuality",
-    "xml_path"    : "ReportingCategories.HDC-1941"
+    "XMLPath"    : "ReportingCategories.HDC-1941"
   },
   "HDC-1942" :
   {
     "title"       : "HDC-1942",
     "type"        : "ratio",
     "description" : "MU-Antipsychotics65+",
-    "xml_path"    : "ReportingCategories.HDC-1942"
+    "XMLPath"    : "ReportingCategories.HDC-1942"
   },
   "HDC-1943" :
   {
     "title"       : "HDC-1943",
     "type"        : "ratio",
     "description" : "MU-NSAID65+",
-    "xml_path"    : "ReportingCategories.HDC-1943"
+    "XMLPath"    : "ReportingCategories.HDC-1943"
   },
   "HDC-1944" :
   {
     "title"       : "HDC-1944",
     "type"        : "ratio",
     "description" : "MU-NSAID",
-    "xml_path"    : "ReportingCategories.HDC-1944"
+    "XMLPath"    : "ReportingCategories.HDC-1944"
   },
   "HDC-1945" :
   {
     "title"       : "HDC-1945",
     "type"        : "ratio",
     "description" : "MU-benzodiazepine65+",
-    "xml_path"    : "ReportingCategories.HDC-1945"
+    "XMLPath"    : "ReportingCategories.HDC-1945"
   },
   "HDC-1946" :
   {
     "title"       : "HDC-1946",
     "type"        : "ratio",
     "description" : "MU-benzodiazepine",
-    "xml_path"    : "ReportingCategories.HDC-1946"
+    "XMLPath"    : "ReportingCategories.HDC-1946"
   },
   "HDC-1947" :
   {
     "title"       : "HDC-1947",
     "type"        : "ratio",
     "description" : "MU-benzodiazepineAndOpioid65+",
-    "xml_path"    : "ReportingCategories.HDC-1947"
+    "XMLPath"    : "ReportingCategories.HDC-1947"
   },
   "HDC-1948" :
   {
     "title"       : "HDC-1948",
     "type"        : "ratio",
     "description" : "MU-benzodiazepineAndOpioid",
-    "xml_path"    : "ReportingCategories.HDC-1948"
+    "XMLPath"    : "ReportingCategories.HDC-1948"
   },
   "HDC-1950" :
   {
     "title"       : "HDC-1950",
     "type"        : "ratio",
     "description" : "MU-Digoxin65+",
-    "xml_path"    : "ReportingCategories.HDC-1950"
+    "XMLPath"    : "ReportingCategories.HDC-1950"
   },
   "HDC-1995" :
   {
@@ -738,132 +738,132 @@
     "title"       : "HDC-2001",
     "type"        : "ratio",
     "description" : "AntibioticBreakdownDoxycycline",
-    "xml_path"    : "ReportingCategories.HDC-2001"
+    "XMLPath"    : "ReportingCategories.HDC-2001"
   },
   "HDC-2002" :
   {
     "title"       : "HDC-2002",
     "type"        : "ratio",
     "description" : "AntibioticBreakdownTetracycline",
-    "xml_path"    : "ReportingCategories.HDC-2002"
+    "XMLPath"    : "ReportingCategories.HDC-2002"
   },
   "HDC-2003" :
   {
     "title"       : "HDC-2003",
     "type"        : "ratio",
     "description" : "AntibioticBreakdownMinocycline",
-    "xml_path"    : "ReportingCategories.HDC-2003"
+    "XMLPath"    : "ReportingCategories.HDC-2003"
   },
   "HDC-2004" :
   {
     "title"       : "HDC-2004",
     "type"        : "ratio",
     "description" : "AntibioticBreakdownAmpicillin",
-    "xml_path"    : "ReportingCategories.HDC-2004"
+    "XMLPath"    : "ReportingCategories.HDC-2004"
   },
   "HDC-2005" :
   {
     "title"       : "HDC-2005",
     "type"        : "ratio",
     "description" : "AntibioticBreakdownAmoxicillin",
-    "xml_path"    : "ReportingCategories.HDC-2005"
+    "XMLPath"    : "ReportingCategories.HDC-2005"
   },
   "HDC-2006" :
   {
     "title"       : "HDC-2006",
     "type"        : "ratio",
     "description" : "AntibioticBreakdownCloxacillin",
-    "xml_path"    : "ReportingCategories.HDC-2006"
+    "XMLPath"    : "ReportingCategories.HDC-2006"
   },
   "HDC-2007" :
   {
     "title"       : "HDC-2007",
     "type"        : "ratio",
     "description" : "AntibioticBreakdownCefalexin",
-    "xml_path"    : "ReportingCategories.HDC-2007"
+    "XMLPath"    : "ReportingCategories.HDC-2007"
   },
   "HDC-2008" :
   {
     "title"       : "HDC-2008",
     "type"        : "ratio",
     "description" : "AntibioticBreakdownCefuroxime",
-    "xml_path"    : "ReportingCategories.HDC-2008"
+    "XMLPath"    : "ReportingCategories.HDC-2008"
   },
   "HDC-2009" :
   {
     "title"       : "HDC-2009",
     "type"        : "ratio",
     "description" : "AntibioticBreakdownCefaclor",
-    "xml_path"    : "ReportingCategories.HDC-2009"
+    "XMLPath"    : "ReportingCategories.HDC-2009"
   },
   "HDC-2010" :
   {
     "title"       : "HDC-2010",
     "type"        : "ratio",
     "description" : "AntibioticBreakdownCefixime",
-    "xml_path"    : "ReportingCategories.HDC-2010"
+    "XMLPath"    : "ReportingCategories.HDC-2010"
   },
   "HDC-2011" :
   {
     "title"       : "HDC-2011",
     "type"        : "ratio",
     "description" : "AntibioticBreakdownSulfonamideTrimethoprim",
-    "xml_path"    : "ReportingCategories.HDC-2011"
+    "XMLPath"    : "ReportingCategories.HDC-2011"
   },
   "HDC-2012" :
   {
     "title"       : "HDC-2012",
     "type"        : "ratio",
     "description" : "AntibioticBreakdownErythromycin",
-    "xml_path"    : "ReportingCategories.HDC-2012"
+    "XMLPath"    : "ReportingCategories.HDC-2012"
   },
   "HDC-2013" :
   {
     "title"       : "HDC-2013",
     "type"        : "ratio",
     "description" : "AntibioticBreakdownClarithromycin",
-    "xml_path"    : "ReportingCategories.HDC-2013"
+    "XMLPath"    : "ReportingCategories.HDC-2013"
   },
   "HDC-2014" :
   {
     "title"       : "HDC-2014",
     "type"        : "ratio",
     "description" : "AntibioticBreakdownAzithromycin",
-    "xml_path"    : "ReportingCategories.HDC-2014"
+    "XMLPath"    : "ReportingCategories.HDC-2014"
   },
   "HDC-2015" :
   {
     "title"       : "HDC-2015",
     "type"        : "ratio",
     "description" : "AntibioticBreakdownClindamycin",
-    "xml_path"    : "ReportingCategories.HDC-2015"
+    "XMLPath"    : "ReportingCategories.HDC-2015"
   },
   "HDC-2016" :
   {
     "title"       : "HDC-2016",
     "type"        : "ratio",
     "description" : "AntibioticBreakdownCiprofloxacin",
-    "xml_path"    : "ReportingCategories.HDC-2016"
+    "XMLPath"    : "ReportingCategories.HDC-2016"
   },
 "HDC-2017" :
   {
     "title"       : "HDC-2017",
     "type"        : "ratio",
     "description" : "AntibioticBreakdownLevofloxacin",
-    "xml_path"    : "ReportingCategories.HDC-2017"
+    "XMLPath"    : "ReportingCategories.HDC-2017"
   },
   "HDC-2018" :
   {
     "title"       : "HDC-2018",
     "type"        : "ratio",
     "description" : "AntibioticBreakdownMoxifloxacin",
-    "xml_path"    : "ReportingCategories.HDC-2018"
+    "XMLPath"    : "ReportingCategories.HDC-2018"
   },
   "HDC-2019" :
   {
     "title"       : "HDC-2019",
     "type"        : "ratio",
     "description" : "AntibioticBreakdownNitrofurantoin",
-    "xml_path"    : "ReportingCategories.HDC-2019"
+    "XMLPath"    : "ReportingCategories.HDC-2019"
   }
 }
