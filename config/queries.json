@@ -712,6 +712,97 @@
     "description" : "MU-Digoxin65+",
     "XMLPath"    : "ReportingCategories.HDC-1950"
   },
+   "HDC-1951" : 
+  {
+    "title"       : "HDC-1951",
+    "type"        : "ratio",
+    "description" : "MU-Morphine",
+    "XMLPath"    : "ReportingCategories.HDC-1951"
+  },
+  "HDC-1952" : 
+  {
+    "title"       : "HDC-1952",
+    "type"        : "ratio",
+    "description" : "MU-Hydromorphine",
+    "XMLPath"    : "ReportingCategories.HDC-1952"
+  },
+  "HDC-1953" : 
+  {
+    "title"       : "HDC-1953",
+    "type"        : "ratio",
+    "description" : "MU-Dihydrocodeine",
+    "XMLPath"    : "ReportingCategories.HDC-1953"
+  },
+  "HDC-1954" : 
+  {
+    "title"       : "HDC-1954",
+    "type"        : "ratio",
+    "description" : "MU-MorphineCombinations",
+    "XMLPath"    : "ReportingCategories.HDC-1954"
+  },
+  "HDC-1955" : 
+  {
+    "title"       : "HDC-1955",
+    "type"        : "ratio",
+    "description" : "MU-OxycodoneCombinations",
+    "XMLPath"    : "ReportingCategories.HDC-1955"
+  },
+  "HDC-1956" : 
+  {
+    "title"       : "HDC-1956",
+    "type"        : "ratio",
+    "description" : "MU-DihydrocodeineCombinations",
+    "XMLPath"    : "ReportingCategories.HDC-1956"
+  },
+  "HDC-1957" : 
+  {
+    "title"       : "HDC-1957",
+    "type"        : "ratio",
+    "description" : "MU-CodeineCombinationsExcludingPsycholeptics",
+    "XMLPath"    : "ReportingCategories.HDC-1957"
+  },
+  "HDC-1958" : 
+  {
+    "title"       : "HDC-1958",
+    "type"        : "ratio",
+    "description" : "MU-CodeineCombinationsWithPsycholeptics",
+    "XMLPath"    : "ReportingCategories.HDC-1958"
+  },
+  "HDC-1959" : 
+  {
+    "title"       : "HDC-1959",
+    "type"        : "ratio",
+    "description" : "MU-Fentanyl",
+    "XMLPath"    : "ReportingCategories.HDC-1959"
+  },
+  "HDC-1960" : 
+  {
+    "title"       : "HDC-1960",
+    "type"        : "ratio",
+    "description" : "MU-MethadoneCombinationsExcludingPsycholeptics",
+    "XMLPath"    : "ReportingCategories.HDC-1960"
+  },
+  "HDC-1961" : 
+  {
+    "title"       : "HDC-1961",
+    "type"        : "ratio",
+    "description" : "MU-Tramadol",
+    "XMLPath"    : "ReportingCategories.HDC-1961"
+  },
+  "HDC-1962" : 
+  {
+    "title"       : "HDC-1962",
+    "type"        : "ratio",
+    "description" : "MU-TramadolCombinations",
+    "XMLPath"    : "ReportingCategories.HDC-1962"
+  },
+  "HDC-1963" : 
+  {
+    "title"       : "HDC-1963",
+    "type"        : "ratio",
+    "description" : "MU-OtherOpioid",
+    "XMLPath"    : "ReportingCategories.HDC-1963"
+  },
   "HDC-1995" :
   {
     "title"       : "HDC-1995",
