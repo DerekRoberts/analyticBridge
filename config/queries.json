@@ -956,5 +956,12 @@
     "type"        : "ratio",
     "description" : "AntibioticBreakdownNitrofurantoin",
     "XMLPath"    : "ReportingCategories.HDC-2019"
+  },
+  "HDC-2021" :
+  {
+    "title"       : "HDC-2021",
+    "type"        : "ratio",
+    "description" : "AntibioticBreakdownOther",
+    "XMLPath"    : "ReportingCategories.HDC-2021"
   }
 }
