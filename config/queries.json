@@ -286,6 +286,34 @@
     "description" : "PH-recentInfluencaVacc65+",
     "XMLPath"    : "ReportingCategories.Influenza_Vac_65Plus"
   },
+"HDC-0945" : 
+  {
+    "title"       : "HDC-0945",
+    "type"        : "ratio",
+    "description" : "PH-frailty",
+    "XMLPath"    : "ReportingCategories.HDC-0945"
+  },
+"HDC-0947" : 
+  {
+    "title"       : "HDC-0947",
+    "type"        : "ratio",
+    "description" : "PH-dementia",
+    "XMLPath"    : "ReportingCategories.HDC-0947"
+  },
+  "HDC-0950" : 
+  {
+    "title"       : "HDC-0950",
+    "type"        : "ratio",
+    "description" : "PH-endOfLife",
+    "XMLPath"    : "ReportingCategories.HDC-0950"
+  },
+  "HDC-0952" : 
+  {
+    "title"       : "HDC-0952",
+    "type"        : "ratio",
+    "description" : "PH-parkinsons",
+    "XMLPath"    : "ReportingCategories.HDC-0952"
+  },
   "HDC-0954" :
   {
     "type"        : "Ratio",
@@ -303,6 +331,13 @@
     "type"        : "Ratio",
     "description" : "PH-asthma",
     "XMLPath"    : "ReportingCategories.HDC-0956"
+  },
+  "HDC-0957" : 
+  {
+    "title"       : "HDC-0957",
+    "type"        : "ratio",
+    "description" : "PH-anxiety",
+    "XMLPath"    : "ReportingCategories.HDC-0957"
   },
   "HDC-0958" :
   {
@@ -610,6 +645,13 @@
     "type"        : "Ratio",
     "description" : "MU-Thiazide65+",
     "XMLPath"    : "ReportingCategories.HDC-1930"
+  },
+  "HDC-1931" : 
+  {
+    "title"       : "HDC-1931",
+    "type"        : "ratio",
+    "description" : "MU-Digoxin",
+    "XMLPath"    : "ReportingCategories.HDC-1931"
   },
   "HDC-1932" :
   {
