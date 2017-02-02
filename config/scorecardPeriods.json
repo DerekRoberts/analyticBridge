@@ -8,4 +8,11 @@
 	"months" : 3
     },
     "start" : "2014-01-01"
+},
+{
+    "end" : "now",
+    "interval" : {
+        "quarters" : 1
+    },
+    "length" : {"years" : 3}
 }]
