@@ -1012,5 +1012,25 @@
     "type"        : "ratio",
     "description" : "AntibioticBreakdownOther",
     "XMLPath"    : "ReportingCategories.HDC-2021"
+  },
+  "HDC-9995": {
+	  "exclude" : true,
+	  "description" : "Testing Query"
+  },
+  "HDC-9996": {
+	  "exclude" : true,
+	  "description" : "Testing Query"
+  },
+  "HDC-9997": {
+	  "exclude" : true,
+	  "description" : "Testing Query"
+  },
+  "HDC-9998": {
+	  "exclude" : true,
+	  "description" : "Testing Query"
+  },
+  "HDC-9999": {
+	  "exclude" : true,
+	  "description" : "Testing Query"
   }
 }

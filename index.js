@@ -12,6 +12,7 @@ var executions = require( __dirname + '/lib/' + 'executions.js' );
 var doctors = require( __dirname + '/lib/' + 'doctors.js' );
 // Query list, with types and xml paths
 var queries = require( __dirname + '/lib/' + 'queries.js');
+var connectionsConfig = require(__dirname + '/lib/' + './connections.js');
 var util = require( __dirname + '/lib/' + 'util.js');
 var scorecardPeriods = require( __dirname + '/lib/' + 'scorecardPeriods.js');
 var scorecardBuilder = require( __dirname + '/lib/' + 'scorecardBuilder.js');
@@ -29,82 +30,128 @@ main();
  * Function called as entry point for execution
  */
 function main() {
-  // Obtain query execution data
   var executionStart = moment();
-  executions.getAllData( function( error, data ){
-    if( error ){ throw new Error( error )}
-    
-    // Get list of time periods for which to attempt to generate scorecards
-    var periods = scorecardPeriods.getScorecardPeriods();
-    // Get list of doctors for which to attempt to generate scorecards
-    var doctorList = doctors.getDoctors();
-    
-    var requests = []
-    var request;
-    // Prepare scorecard request for each combination of doctor and period
-    doctorList.forEach(function( doctor ){
-	periods.forEach(function( period ){
-	    request = {};
-	    request.doctor = doctor;
-	    request.period = period;
+    // Get list of queries with results
+	executions.getAllQueriesWithResults( function( error, queriesWithResults ){
+	    if( error ){ throw new Error( error )}
+	
+	    // Compare list of queries with results to queries configuration
+	    var queryConfigGenerate = []; 
+	    queriesWithResults.forEach(function(queryTitle) {
+	    	if(!queries.getQueryInfo(queryTitle)) {
+	    		// We have a query with results for which there is no entry in queries config
+	    		queryConfigGenerate.push(queryTitle);
+	    	}
+	    })
+	    
+	    var configGenerated = false;
+	    if((queryConfigGenerate.length > 0) && connectionsConfig.getQueries().generateConfig) {
+	    	// We have config to generate
+	    	queryConfigGenerate.forEach(function(queryTitle) {
+		    	queries.addDefaultQueryConfig(queryTitle);
+		    })
+		    
+		    configGenerated = true;
+	    
+	    	// Output messages indicating the generated configuration that is being used 
+	    	console.log("Using default query configuration for the following queries:");
+	    	queryConfigGenerate.forEach(function(queryTitle) {
+	    		console.log(queryTitle);
+	    	});
 
-	    requests.push(request);
+	    }
+	    
+	    // Obtain query execution data
+		executions.getAllData( function( error, data ){
+			if( error ){ throw new Error( error )}
+			
+			// Get list of time periods for which to attempt to generate scorecards
+			var periods = scorecardPeriods.getScorecardPeriods();
+			// Get list of doctors for which to attempt to generate scorecards
+			var doctorList = doctors.getDoctors();
+			
+			var requests = []
+			var request;
+			// Prepare scorecard request for each combination of doctor and period
+			doctorList.forEach(function( doctor ){
+			periods.forEach(function( period ){
+			    request = {};
+			    request.doctor = doctor;
+			    request.period = period;
+			
+			    requests.push(request);
+			});
+			});
+			
+			var earliestExecutionForRunHolder = {};
+			
+			// Process each scorecard request asynchronously in parallel for efficiency.
+			// Update: Tests indicate no performance gain from parallel processing in current 
+			// hardware and system environment. Process request sequentially to show
+			// continuous progress. 
+			async.eachLimit(requests, 1, function(request, callback) {
+			processScorecardRequest(request.doctor, request.period, data, earliestExecutionForRunHolder, callback);
+			}, function(err) {
+			
+				scorecardExporter.closeConnection();
+			
+				// Line break for visual break
+				console.log('');
+			
+			    // if any of the scorecard request processing produced an error, err would equal that error
+			    if( err ) {
+			      // One of the iterations produced an error.
+			      // All processing will now stop.
+			      console.log('Scorecard processing halted due to error: ' + err);
+			    } else {
+			      console.log('All scorecard requests processed successfully');
+			      
+			      if(queryConfigGenerate.length > 0) {
+			    	  if(configGenerated) {
+			    		  console.log("Generated default query configuration for the following queries:");
+			    		  queryConfigGenerate.forEach(function(queryTitle) {
+			    			  console.log(queryTitle);
+			    		  });
+			    		  queries.saveGeneratedConfig(function(error) {});
+			    	  } else {
+			    		  console.log("Executions for the following queries were ignored as there was no entry for them in queries.json and generation of default query configuration is disabled:");
+			    		  queryConfigGenerate.forEach(function(queryTitle) {
+			    			  console.log(queryTitle);
+			    		  });
+			    	  }
+			      }
+			      
+			      
+			      console.log("Oldest Query Execution Used to Populate any Scorecard: "
+				        + moment.unix(earliestExecutionForRunHolder.executionTime).format(
+				                "dddd, MMMM Do YYYY, h:mm:ss a"));
+			      
+			      // Output execution time in a friendly manner
+			      var executionDuration = moment.duration(moment().diff(executionStart));
+			      if(executionDuration.asMinutes() >= 2.0) {
+			          console.log("Completed in " + Math.ceil(executionDuration.asMinutes()) + " minutes");
+			      } else if(executionDuration.asSeconds() >= 2.0) {
+			          console.log("Completed in " + Math.ceil(executionDuration.asSeconds()) + " seconds");
+			      } else {
+			          console.log("Completed in " + Math.ceil(executionDuration.asMilliseconds()) + " milliseconds");
+			      }
+			      
+			      // Output possible cache savings time in a friendly manner
+			      var cachingDuration = scorecardBuilder.getTotalSortTime();
+			      if(cachingDuration.asMinutes() >= 2.0) {
+			          console.log("Time spent on operations that could possibly be reduced by caching: " 
+			    	      + Math.ceil(cachingDuration.asMinutes()) + " minutes");
+			      } else if(cachingDuration.asSeconds() >= 2.0) {
+			          console.log("Time spent on operations that could possibly be reduced by caching: " 
+			    	      + Math.ceil(cachingDuration.asSeconds()) + " seconds");
+			      } else {
+			          console.log("Time spent on operations that could possibly be reduced by caching: " 
+			    	      + Math.ceil(cachingDuration.asMilliseconds()) + " milliseconds");
+			      }
+			    }
+			});
+		});
 	});
-    });
-    
-    var earliestExecutionForRunHolder = {};
-    
-    // Process each scorecard request asynchronously in parallel for efficiency.
-    // Update: Tests indicate no performance gain from parallel processing in current 
-    // hardware and system environment. Process request sequentially to show
-    // continuous progress. 
-    async.eachLimit(requests, 1, function(request, callback) {
-	processScorecardRequest(request.doctor, request.period, data, earliestExecutionForRunHolder, callback);
-    }, function(err) {
-	
-	scorecardExporter.closeConnection();
-	
-		// Line break for visual break
-		console.log('');
-	
-        // if any of the scorecard request processing produced an error, err would equal that error
-        if( err ) {
-          // One of the iterations produced an error.
-          // All processing will now stop.
-          console.log('Scorecard processing halted due to error: ' + err);
-        } else {
-          console.log('All scorecard requests processed successfully');
-          
-          console.log("Oldest Query Execution Used to Populate any Scorecard: "
-  		        + moment.unix(earliestExecutionForRunHolder.executionTime).format(
-  		                "dddd, MMMM Do YYYY, h:mm:ss a"));
-          
-          // Output execution time in a friendly manner
-          var executionDuration = moment.duration(moment().diff(executionStart));
-          if(executionDuration.asMinutes() >= 2.0) {
-              console.log("Completed in " + Math.ceil(executionDuration.asMinutes()) + " minutes");
-          } else if(executionDuration.asSeconds() >= 2.0) {
-              console.log("Completed in " + Math.ceil(executionDuration.asSeconds()) + " seconds");
-          } else {
-              console.log("Completed in " + Math.ceil(executionDuration.asMilliseconds()) + " milliseconds");
-          }
-          
-          // Output possible cache savings time in a friendly manner
-          var cachingDuration = scorecardBuilder.getTotalSortTime();
-          if(cachingDuration.asMinutes() >= 2.0) {
-              console.log("Time spent on operations that could possibly be reduced by caching: " 
-        	      + Math.ceil(cachingDuration.asMinutes()) + " minutes");
-          } else if(cachingDuration.asSeconds() >= 2.0) {
-              console.log("Time spent on operations that could possibly be reduced by caching: " 
-        	      + Math.ceil(cachingDuration.asSeconds()) + " seconds");
-          } else {
-              console.log("Time spent on operations that could possibly be reduced by caching: " 
-        	      + Math.ceil(cachingDuration.asMilliseconds()) + " milliseconds");
-          }
-        }
-    });
-  });
-    
 }
 
 /**
@@ -117,7 +164,7 @@ function main() {
  *            {object} Time period containing start and end moment date objects
  *            indicating the time period for which to attempt to generate a
  *            scorecard
- * @param {data}
+ * @param data {object}
  *            Object containing all data from which the data for the scorecard
  *            should be pulled
  * @param earliestExecutionHolder
