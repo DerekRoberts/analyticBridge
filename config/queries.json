@@ -1,884 +1,884 @@
 {
-	"HDC-0001": {
-		"type": "TenYearRanges",
-		"description": "PatientCounts",
-		"XMLPath": "PatientCounts",
-		"genderMap": {
-			"Male": "Male",
-			"Female": "Female",
-			"Unspecified": "Unspecified"
-		},
-		"ageMap": {
-			"0": "ZeroToNine",
-			"10": "TenToNineteen",
-			"20": "TwentyToTwentyNine",
-			"30": "ThirtyToThirtyNine",
-			"40": "FortyToFortyNine",
-			"50": "FiftyToFiftyNine",
-			"60": "SixtyToSixtyNine",
-			"70": "SeventyToSeventyNine",
-			"80": "EightyToEightyNine",
-			"90": "NinetyToOneHundredAndOlder",
-			"UN": "UnspecifiedAge"
-		}
-	},
-	"HDC-0002": {
-		"title": "HDC-0002",
-		"type": "Ratio",
-		"description": "Frailty",
-		"XMLPath": "ReportingCategories.HDC-0002"
-	},
-	"HDC-0004": {
-		"type": "Ratio",
-		"description": "UndocumentedBirthdate",
-		"XMLPath": "ReportingCategories.HDC-0004"
-	},
-	"HDC-0009": {
-		"type": "Ratio",
-		"description": "bmi_map_20",
-		"XMLPath": "ReportingCategories.HDC-0009"
-	},
-	"HDC-0014": {
-		"type": "Ratio",
-		"description": "PH-pneumococcalMap",
-		"XMLPath": "ReportingCategories.HDC-0014"
-	},
-	"HDC-0020": {
-		"type": "Ratio",
-		"description": "PH-recentColonScreening",
-		"XMLPath": "ReportingCategories.Fecal_occult_blood_in_last_2_yrs_age_50To74"
-	},
-	"HDC-0022": {
-		"type": "Ratio",
-		"description": "FastingBloodSugar",
-		"XMLPath": "ReportingCategories.Fasting_blood_sugar_in_last_3_yrs_age_GreaterThan_45"
-	},
-	"HDC-0025": {
-		"type": "Ratio",
-		"description": "DiabetesHgbA1C",
-		"XMLPath": "ReportingCategories.Diabetics_with_HGBA1C_in_last_6_mo"
-	},
-	"HDC-0026": {
-		"type": "Ratio",
-		"description": "DiabetesHgbA1CValue",
-		"XMLPath": "ReportingCategories.HGBA1C_in_last_yr_LessThanOrEqualTo_7Point0"
-	},
-	"HDC-0027": {
-		"type": "Ratio",
-		"description": "DiabetesLDLValue",
-		"XMLPath": "ReportingCategories.LDL_in_last_yr_LessThanOrEqualTo_2Point5"
-	},
-	"HDC-0028": {
-		"type": "Ratio",
-		"description": "DiabetesBP",
-		"XMLPath": "ReportingCategories.Diabetes_And_BP_LessThanOrEqualTo_130_80_in_last_yr"
-	},
-	"HDC-0053": {
-		"type": "Ratio",
-		"description": "PP-ppMap5+",
-		"XMLPath": "ReportingCategories.HDC-0053"
-	},
-	"HDC-0054": {
-		"type": "Ratio",
-		"description": "PP-ppMap10+",
-		"XMLPath": "ReportingCategories.HDC-0054"
-	},
-	"HDC-0056": {
-		"type": "Ratio",
-		"description": "PP-renalMap65",
-		"XMLPath": "ReportingCategories.HDC-0056"
-	},
-	"HDC-0057": {
-		"type": "Ratio",
-		"description": "PP-primaryStatinMap65",
-		"XMLPath": "ReportingCategories.HDC-0057"
-	},
-	"HDC-0058": {
-		"type": "Ratio",
-		"description": "PP-secondaryStatinMap65",
-		"XMLPath": "ReportingCategories.HDC-0058"
-	},
-	"HDC-0602": {
-		"type": "Ratio",
-		"description": "DQ-Obesity-last2years",
-		"XMLPath": "ReportingCategories.HDC-0602"
-	},
-	"HDC-0732": {
-		"type": "Ratio",
-		"description": "ChronicPain",
-		"XMLPath": "ReportingCategories.Chronic_Pain_prevalence"
-	},
-	"HDC-0733": {
-		"type": "Ratio",
-		"description": "PR-chronicPainAndOpioids",
-		"XMLPath": "ReportingCategories.HDC-0733"
-	},
-	"HDC-0734": {
-		"type": "Ratio",
-		"description": "PR-opioidsWithoutChronicPain",
-		"XMLPath": "ReportingCategories.HDC-0734"
-	},
-	"HDC-0739": {
-		"type": "Ratio",
-		"description": "PR-chronicPainAndDepression",
-		"XMLPath": "ReportingCategories.HDC-0739"
-	},
-	"HDC-0743": {
-		"type": "Ratio",
-		"description": "RaOaLbp",
-		"XMLPath": "ReportingCategories.HDC-0743"
-	},
-	"HDC-0753": {
-		"type": "Ratio",
-		"description": "PR-oseteoarthritisAcetaminophen",
-		"XMLPath": "ReportingCategories.HDC-0753"
-	},
-	"HDC-0761B": {
-		"type": "Ratio",
-		"description": "EOL-frailty55",
-		"XMLPath": "ReportingCategories.HDC-0761B"
-	},
-	"HDC-0761": {
-		"type": "Ratio",
-		"description": "EOL-55+",
-		"XMLPath": "ReportingCategories.HDC-0761"
-	},
-	"HDC-0831": {
-		"type": "Ratio",
-		"description": "DQ-EncounterFrequency",
-		"XMLPath": "ReportingCategories.HDC-0831"
-	},
-	"HDC-0832": {
-		"type": "Ratio",
-		"description": "DQ-DocumentedGender",
-		"XMLPath": "ReportingCategories.HDC-0832"
-	},
-	"HDC-0833": {
-		"type": "Ratio",
-		"description": "DQ-InvalidBirthdate",
-		"XMLPath": "ReportingCategories.HDC-0833"
-	},
-	"HDC-0834": {
-		"type": "Ratio",
-		"description": "DQ-UndocumentedBirthdate",
-		"XMLPath": "ReportingCategories.HDC-0834"
-	},
-	"HDC-0836": {
-		"type": "Ratio",
-		"description": "DQ-CodedMedications",
-		"XMLPath": "ReportingCategories.HDC-0836"
-	},
-	"HDC-0837": {
-		"type": "Ratio",
-		"description": "DQ-PrescriptionFrequency",
-		"XMLPath": "ReportingCategories.HDC-0837"
-	},
-	"HDC-0838": {
-		"type": "Ratio",
-		"description": "DQ-NoMeds",
-		"XMLPath": "ReportingCategories.HDC-0838"
-	},
-	"HDC-0840": {
-		"type": "Ratio",
-		"description": "DQ-CodedConditions",
-		"XMLPath": "ReportingCategories.HDC-0840"
-	},
-	"HDC-0842": {
-		"type": "Ratio",
-		"description": "DQ-diabetes12+",
-		"XMLPath": "ReportingCategories.HDC-0842"
-	},
-	"HDC-0843": {
-		"type": "Ratio",
-		"description": "DQ-tiotropiumAndCOPD",
-		"XMLPath": "ReportingCategories.HDC-0843"
-	},
-	"HDC-0845": {
-		"type": "Ratio",
-		"description": "DQ-levothroxineAndHypothyroidism",
-		"XMLPath": "ReportingCategories.HDC-0845"
-	},
-	"HDC-0846": {
-		"type": "Ratio",
-		"description": "DQ-antigoutWithGout",
-		"XMLPath": "ReportingCategories.HDC-0846"
-	},
-	"HDC-0865": {
-		"type": "Ratio",
-		"description": "DQ-bpCheck21+",
-		"XMLPath": "ReportingCategories.HDC-0865"
-	},
-	"HDC-0882": {
-		"type": "Ratio",
-		"description": "DQ-PatientsWithACondition",
-		"XMLPath": "ReportingCategories.HDC-0882"
-	},
-	"HDC-0889": {
-		"type": "Ratio",
-		"description": "DQ-bmiCheck21+",
-		"XMLPath": "ReportingCategories.HDC-0889"
-	},
-	"HDC-0917": {
-		"title": "HDC-0917",
-		"type": "ratio",
-		"description": "PH-cervixScreening",
-		"XMLPath": "ReportingCategories.HDC-0917"
-	},
-	"HDC-0919": {
-		"title": "HDC-0919",
-		"type": "ratio",
-		"description": "HypertensionAndBPInLastYear",
-		"XMLPath": "ReportingCategories.HDC-0919"
-	},
-	"HDC-0934": {
-		"type": "Ratio",
-		"description": "COPDandPneumococcal",
-		"XMLPath": "ReportingCategories.COPD_and_pneumococcal_vaccine"
-	},
-	"HDC-0943": {
-		"type": "Ratio",
-		"description": "PH-recentInfluencaVacc65+",
-		"XMLPath": "ReportingCategories.Influenza_Vac_65Plus"
-	},
-	"HDC-0945": {
-		"title": "HDC-0945",
-		"type": "ratio",
-		"description": "PH-frailty",
-		"XMLPath": "ReportingCategories.HDC-0945"
-	},
-	"HDC-0947": {
-		"title": "HDC-0947",
-		"type": "ratio",
-		"description": "PH-dementia",
-		"XMLPath": "ReportingCategories.HDC-0947"
-	},
-	"HDC-0950": {
-		"title": "HDC-0950",
-		"type": "ratio",
-		"description": "PH-endOfLife",
-		"XMLPath": "ReportingCategories.HDC-0950"
-	},
-	"HDC-0952": {
-		"title": "HDC-0952",
-		"type": "ratio",
-		"description": "PH-parkinsons",
-		"XMLPath": "ReportingCategories.HDC-0952"
-	},
-	"HDC-0954": {
-		"type": "Ratio",
-		"description": "PH-chronicKidneyDisease",
-		"XMLPath": "ReportingCategories.Chronic_Kidney_Disease_prevalence"
-	},
-	"HDC-0955": {
-		"type": "Ratio",
-		"description": "PH-congestiveHeartFailure",
-		"XMLPath": "ReportingCategories.CHF_prevalence"
-	},
-	"HDC-0956": {
-		"type": "Ratio",
-		"description": "PH-asthma",
-		"XMLPath": "ReportingCategories.HDC-0956"
-	},
-	"HDC-0957": {
-		"title": "HDC-0957",
-		"type": "ratio",
-		"description": "PH-anxiety",
-		"XMLPath": "ReportingCategories.HDC-0957"
-	},
-	"HDC-0958": {
-		"type": "Ratio",
-		"description": "PH-chronicObstructivePulminaryDisease",
-		"XMLPath": "ReportingCategories.COPD_prevalence"
-	},
-	"HDC-0959": {
-		"type": "Ratio",
-		"description": "PH-depression",
-		"XMLPath": "ReportingCategories.Depression_prevalence"
-	},
-	"HDC-0960": {
-		"type": "Ratio",
-		"description": "PH-diabetes",
-		"XMLPath": "ReportingCategories.Diabetes_prevalence"
-	},
-	"HDC-0962": {
-		"type": "Ratio",
-		"description": "PH-hypertension",
-		"XMLPath": "ReportingCategories.Hypertension_prevalence"
-	},
-	"HDC-0964": {
-		"type": "Ratio",
-		"description": "PH-rheumatoid",
-		"XMLPath": "ReportingCategories.HDC-0964"
-	},
-	"HDC-0970": {
-		"title": "HDC-0970",
-		"type": "ratio",
-		"description": "PH-dependenceAlcohol",
-		"XMLPath": "ReportingCategories.HDC-0970"
-	},
-	"HDC-0971": {
-		"title": "HDC-0971",
-		"type": "ratio",
-		"description": "PH-dependenceDrugs",
-		"XMLPath": "ReportingCategories.HDC-0971"
-	},
-	"HDC-0981": {
-		"type": "Ratio",
-		"description": "PH-hepC",
-		"XMLPath": "ReportingCategories.HDC-0981"
-	},
-	"HDC-0995": {
-		"type": "Ratio",
-		"description": "PH-recentMammogram50-70",
-		"XMLPath": "ReportingCategories.Screening_Mammogram_ages_50To70"
-	},
-	"HDC-1004": {
-		"type": "Ratio",
-		"description": "ObesityYouth",
-		"XMLPath": "ReportingCategories.HDC-1004"
-	},
-	"HDC-1134": {
-		"title": "HDC-1134",
-		"type": "ratio",
-		"description": "INRMonitoring",
-		"XMLPath": "ReportingCategories.HDC-1134"
-	},
-	"HDC-1135A": {
-		"type": "Ratio",
-		"description": "LastLab-A1Clt7point1wDiabetes",
-		"XMLPath": "ReportingCategories.HDC-1135A"
-	},
-	"HDC-1135B": {
-		"type": "Ratio",
-		"description": "Lab-A1C7point1to8point0wDiabetes",
-		"XMLPath": "ReportingCategories.HDC-1135B"
-	},
-	"HDC-1135C": {
-		"type": "Ratio",
-		"description": "Lab-A1C8point1to9point0wDiabetes",
-		"XMLPath": "ReportingCategories.HDC-1135C"
-	},
-	"HDC-1135D": {
-		"type": "Ratio",
-		"description": "Lab-A1Cgt9point0wDiabetes",
-		"XMLPath": "ReportingCategories.HDC-1135D"
-	},
-	"HDC-1136": {
-		"title": "HDC-1136",
-		"type": "ratio",
-		"description": "Lab-LDLlt2point6wDiabetes",
-		"XMLPath": "ReportingCategories.HDC-1136"
-	},
-	"HDC-1149": {
-		"type": "Ratio",
-		"description": "PH-cervixScreening",
-		"XMLPath": "ReportingCategories.HDC-1149"
-	},
-	"HDC-1153": {
-		"type": "Ratio",
-		"description": "Lab-FBSorA1C45+",
-		"XMLPath": "ReportingCategories.HDC-1153"
-	},
-	"HDC-1154": {
-		"type": "Ratio",
-		"description": "PH-pneumovaxAdministered",
-		"XMLPath": "ReportingCategories.HDC-1154"
-	},
-	"HDC-1155": {
-		"type": "Ratio",
-		"description": "PH-tetanusVaccinations",
-		"XMLPath": "ReportingCategories.Pneumococcal_Vac_65Plus"
-	},
-	"HDC-1178": {
-		"type": "Ratio",
-		"description": "ElderlyPatients",
-		"XMLPath": "ReportingCategories.HDC-1178"
-	},
-	"HDC-1738": {
-		"type": "Ratio",
-		"description": "ActivePatients",
-		"XMLPath": "ReportingCategories.Active_Patient_Proportion_in_last_3_years"
-	},
-	"HDC-1740": {
-		"type": "TenYearRanges",
-		"description": "ContactCounts",
-		"XMLPath": "ContactCounts",
-		"genderMap": {
-			"Male": "Male",
-			"Female": "Female",
-			"Unspecified": "Unspecified"
-		},
-		"ageMap": {
-			"0": "ZeroToNine",
-			"10": "TenToNineteen",
-			"20": "TwentyToTwentyNine",
-			"30": "ThirtyToThirtyNine",
-			"40": "FortyToFortyNine",
-			"50": "FiftyToFiftyNine",
-			"60": "SixtyToSixtyNine",
-			"70": "SeventyToSeventyNine",
-			"80": "EightyToEightyNine",
-			"90": "NinetyToOneHundredAndOlder",
-			"UN": "UnspecifiedAge"
-		}
-	},
-	"HDC-1785": {
-		"type": "Ratio",
-		"description": "ObesityAdult",
-		"XMLPath": "ReportingCategories.HDC-1785"
-	},
-	"HDC-1786": {
-		"type": "Ratio",
-		"description": "PH-ischemicHeartDisease",
-		"XMLPath": "ReportingCategories.HDC-1786"
-	},
-	"HDC-1787": {
-		"type": "Ratio",
-		"description": "PH-cerebrovascularDisease",
-		"XMLPath": "ReportingCategories.HDC-1787"
-	},
-	"HDC-1788": {
-		"type": "Ratio",
-		"description": "PH-osteoarthritis",
-		"XMLPath": "ReportingCategories.HDC-1788"
-	},
-	"HDC-1899": {
-		"type": "Ratio",
-		"description": "DQ-Obesity-Youth-last2years",
-		"XMLPath": "ReportingCategories.BMI_or_WC_documentation_in_last_2_yrs_age_12To19"
-	},
-	"HDC-1900": {
-		"type": "Ratio",
-		"description": "DQ-Obesity-Adult-last2years",
-		"XMLPath": "ReportingCategories.BMI_or_WC_documented_in_last_2_yrs_age_GreaterThan19"
-	},
-	"HDC-1901": {
-		"type": "Ratio",
-		"description": "pneumococcalVaccinationElderly",
-		"XMLPath": "ReportingCategories.HDC-1901"
-	},
-	"HDC-1902": {
-		"type": "Ratio",
-		"description": "PH-colonScreening",
-		"XMLPath": "ReportingCategories.HDC-1902"
-	},
-	"HDC-1903": {
-		"type": "Ratio",
-		"description": "Lab-FBS46+",
-		"XMLPath": "ReportingCategories.HDC-1903"
-	},
-	"HDC-1904": {
-		"type": "Ratio",
-		"description": "Lab-A1CwDiabetes",
-		"XMLPath": "ReportingCategories.HDC-1904"
-	},
-	"HDC-1905": {
-		"type": "Ratio",
-		"description": "Lab-A1Clt7wDiabetes",
-		"XMLPath": "ReportingCategories.HDC-1905"
-	},
-	"HDC-1906": {
-		"type": "Ratio",
-		"description": "Lab-LDLlt2point5wDiabetes",
-		"XMLPath": "ReportingCategories.HDC-1906"
-	},
-	"HDC-1907": {
-		"type": "Ratio",
-		"description": "BloodPressure-Diabetes",
-		"XMLPath": "ReportingCategories.HDC-1907"
-	},
-	"HDC-1918": {
-		"title": "HDC-1918",
-		"type": "ratio",
-		"description": "ImmunizationClassification",
-		"XMLPath": "ReportingCategories.HDC-1918"
-	},
-	"HDC-1921": {
-		"type": "Ratio",
-		"description": "MU-MHG-CoA65+",
-		"XMLPath": "ReportingCategories.HDC-1921"
-	},
-	"HDC-1922": {
-		"type": "Ratio",
-		"description": "MU-AceInhibitor65+",
-		"XMLPath": "ReportingCategories.HDC-1922"
-	},
-	"HDC-1923": {
-		"type": "Ratio",
-		"description": "MU-PPI65+",
-		"XMLPath": "ReportingCategories.HDC-1923"
-	},
-	"HDC-1924": {
-		"type": "Ratio",
-		"description": "MU-BetaBlockers65+",
-		"XMLPath": "ReportingCategories.HDC-1924"
-	},
-	"HDC-1925": {
-		"type": "Ratio",
-		"description": "MU-DihydropyridineCalciumChannelBlocker65+",
-		"XMLPath": "ReportingCategories.HDC-1925"
-	},
-	"HDC-1926": {
-		"type": "Ratio",
-		"description": "MU-ThyroidHormone65+",
-		"XMLPath": "ReportingCategories.HDC-1926"
-	},
-	"HDC-1927": {
-		"type": "Ratio",
-		"description": "MU-NaturalOpiumAlkaloid65+",
-		"XMLPath": "ReportingCategories.HDC-1927"
-	},
-	"HDC-1928": {
-		"type": "Ratio",
-		"description": "MU-Angeotensin2Antagonist65+",
-		"XMLPath": "ReportingCategories.HDC-1928"
-	},
-	"HDC-1929": {
-		"type": "Ratio",
-		"description": "MU-Biguinide65+",
-		"XMLPath": "ReportingCategories.HDC-1929"
-	},
-	"HDC-1930": {
-		"type": "Ratio",
-		"description": "MU-Thiazide65+",
-		"XMLPath": "ReportingCategories.HDC-1930"
-	},
-	"HDC-1931": {
-		"title": "HDC-1931",
-		"type": "ratio",
-		"description": "MU-Digoxin",
-		"XMLPath": "ReportingCategories.HDC-1931"
-	},
-	"HDC-1932": {
-		"type": "Ratio",
-		"description": "PH_chronicPainOpioids200+",
-		"XMLPath": "ReportingCategories.HDC-1932"
-	},
-	"HDC-1933": {
-		"type": "Ratio",
-		"description": "PH-chronicPainOpioids100-200",
-		"XMLPath": "ReportingCategories.HDC-1933"
-	},
-	"HDC-1934": {
-		"type": "Ratio",
-		"description": "PH-chronicPainOpioids50-100",
-		"XMLPath": "ReportingCategories.HDC-1934"
-	},
-	"HDC-1935": {
-		"type": "Ratio",
-		"description": "PH-chronicPainOpioids10-50",
-		"XMLPath": "ReportingCategories.HDC-1935"
-	},
-	"HDC-1936": {
-		"title": "HDC-1936",
-		"type": "Ratio",
-		"description": "PH-chronicPainOpioids0-10",
-		"XMLPath": "ReportingCategories.HDC-1936"
-	},
-	"HDC-1940": {
-		"title": "HDC-1940",
-		"type": "ratio",
-		"description": "MU-Antidepressants65+",
-		"XMLPath": "ReportingCategories.HDC-1940"
-	},
-	"HDC-1941": {
-		"title": "HDC-1941",
-		"type": "ratio",
-		"description": "medicationFrequencyDataQuality",
-		"XMLPath": "ReportingCategories.HDC-1941"
-	},
-	"HDC-1942": {
-		"title": "HDC-1942",
-		"type": "ratio",
-		"description": "MU-Antipsychotics65+",
-		"XMLPath": "ReportingCategories.HDC-1942"
-	},
-	"HDC-1943": {
-		"title": "HDC-1943",
-		"type": "ratio",
-		"description": "MU-NSAID65+",
-		"XMLPath": "ReportingCategories.HDC-1943"
-	},
-	"HDC-1944": {
-		"title": "HDC-1944",
-		"type": "ratio",
-		"description": "MU-NSAID",
-		"XMLPath": "ReportingCategories.HDC-1944"
-	},
-	"HDC-1945": {
-		"title": "HDC-1945",
-		"type": "ratio",
-		"description": "MU-benzodiazepine65+",
-		"XMLPath": "ReportingCategories.HDC-1945"
-	},
-	"HDC-1946": {
-		"title": "HDC-1946",
-		"type": "ratio",
-		"description": "MU-benzodiazepine",
-		"XMLPath": "ReportingCategories.HDC-1946"
-	},
-	"HDC-1947": {
-		"title": "HDC-1947",
-		"type": "ratio",
-		"description": "MU-benzodiazepineAndOpioid65+",
-		"XMLPath": "ReportingCategories.HDC-1947"
-	},
-	"HDC-1948": {
-		"title": "HDC-1948",
-		"type": "ratio",
-		"description": "MU-benzodiazepineAndOpioid",
-		"XMLPath": "ReportingCategories.HDC-1948"
-	},
-	"HDC-1950": {
-		"title": "HDC-1950",
-		"type": "ratio",
-		"description": "MU-Digoxin65+",
-		"XMLPath": "ReportingCategories.HDC-1950"
-	},
-	"HDC-1951": {
-		"title": "HDC-1951",
-		"type": "ratio",
-		"description": "MU-Morphine",
-		"XMLPath": "ReportingCategories.HDC-1951"
-	},
-	"HDC-1952": {
-		"title": "HDC-1952",
-		"type": "ratio",
-		"description": "MU-Hydromorphine",
-		"XMLPath": "ReportingCategories.HDC-1952"
-	},
-	"HDC-1953": {
-		"title": "HDC-1953",
-		"type": "ratio",
-		"description": "MU-Dihydrocodeine",
-		"XMLPath": "ReportingCategories.HDC-1953"
-	},
-	"HDC-1954": {
-		"title": "HDC-1954",
-		"type": "ratio",
-		"description": "MU-MorphineCombinations",
-		"XMLPath": "ReportingCategories.HDC-1954"
-	},
-	"HDC-1955": {
-		"title": "HDC-1955",
-		"type": "ratio",
-		"description": "MU-OxycodoneCombinations",
-		"XMLPath": "ReportingCategories.HDC-1955"
-	},
-	"HDC-1956": {
-		"title": "HDC-1956",
-		"type": "ratio",
-		"description": "MU-DihydrocodeineCombinations",
-		"XMLPath": "ReportingCategories.HDC-1956"
-	},
-	"HDC-1957": {
-		"title": "HDC-1957",
-		"type": "ratio",
-		"description": "MU-CodeineCombinationsExcludingPsycholeptics",
-		"XMLPath": "ReportingCategories.HDC-1957"
-	},
-	"HDC-1958": {
-		"title": "HDC-1958",
-		"type": "ratio",
-		"description": "MU-CodeineCombinationsWithPsycholeptics",
-		"XMLPath": "ReportingCategories.HDC-1958"
-	},
-	"HDC-1959": {
-		"title": "HDC-1959",
-		"type": "ratio",
-		"description": "MU-Fentanyl",
-		"XMLPath": "ReportingCategories.HDC-1959"
-	},
-	"HDC-1960": {
-		"title": "HDC-1960",
-		"type": "ratio",
-		"description": "MU-MethadoneCombinationsExcludingPsycholeptics",
-		"XMLPath": "ReportingCategories.HDC-1960"
-	},
-	"HDC-1961": {
-		"title": "HDC-1961",
-		"type": "ratio",
-		"description": "MU-Tramadol",
-		"XMLPath": "ReportingCategories.HDC-1961"
-	},
-	"HDC-1962": {
-		"title": "HDC-1962",
-		"type": "ratio",
-		"description": "MU-TramadolCombinations",
-		"XMLPath": "ReportingCategories.HDC-1962"
-	},
-	"HDC-1963": {
-		"title": "HDC-1963",
-		"type": "ratio",
-		"description": "MU-OtherOpioid",
-		"XMLPath": "ReportingCategories.HDC-1963"
-	},
-	"HDC-1995": {
-		"title": "HDC-1995",
-		"type": "Ratio",
-		"description": "AntidepressantUse",
-		"XMLPath": "ReportingCategories.HDC-1995"
-	},
-	"HDC-1996": {
-		"title": "HDC-1996",
-		"type": "ratio",
-		"description": "AntipsychoticUse",
-		"XMLPath": "ReportingCategories.HDC-1996"
-	},
-	"HDC-1997": {
-		"title": "HDC-1997",
-		"type": "ratio",
-		"description": "AntibioticUse",
-		"XMLPath": "ReportingCategories.HDC-1997"
-	},
-	"HDC-2001": {
-		"title": "HDC-2001",
-		"type": "ratio",
-		"description": "AntibioticBreakdownDoxycycline",
-		"XMLPath": "ReportingCategories.HDC-2001"
-	},
-	"HDC-2002": {
-		"title": "HDC-2002",
-		"type": "ratio",
-		"description": "AntibioticBreakdownTetracycline",
-		"XMLPath": "ReportingCategories.HDC-2002"
-	},
-	"HDC-2003": {
-		"title": "HDC-2003",
-		"type": "ratio",
-		"description": "AntibioticBreakdownMinocycline",
-		"XMLPath": "ReportingCategories.HDC-2003"
-	},
-	"HDC-2004": {
-		"title": "HDC-2004",
-		"type": "ratio",
-		"description": "AntibioticBreakdownAmpicillin",
-		"XMLPath": "ReportingCategories.HDC-2004"
-	},
-	"HDC-2005": {
-		"title": "HDC-2005",
-		"type": "ratio",
-		"description": "AntibioticBreakdownAmoxicillin",
-		"XMLPath": "ReportingCategories.HDC-2005"
-	},
-	"HDC-2006": {
-		"title": "HDC-2006",
-		"type": "ratio",
-		"description": "AntibioticBreakdownCloxacillin",
-		"XMLPath": "ReportingCategories.HDC-2006"
-	},
-	"HDC-2007": {
-		"title": "HDC-2007",
-		"type": "ratio",
-		"description": "AntibioticBreakdownCefalexin",
-		"XMLPath": "ReportingCategories.HDC-2007"
-	},
-	"HDC-2008": {
-		"title": "HDC-2008",
-		"type": "ratio",
-		"description": "AntibioticBreakdownCefuroxime",
-		"XMLPath": "ReportingCategories.HDC-2008"
-	},
-	"HDC-2009": {
-		"title": "HDC-2009",
-		"type": "ratio",
-		"description": "AntibioticBreakdownCefaclor",
-		"XMLPath": "ReportingCategories.HDC-2009"
-	},
-	"HDC-2010": {
-		"title": "HDC-2010",
-		"type": "ratio",
-		"description": "AntibioticBreakdownCefixime",
-		"XMLPath": "ReportingCategories.HDC-2010"
-	},
-	"HDC-2011": {
-		"title": "HDC-2011",
-		"type": "ratio",
-		"description": "AntibioticBreakdownSulfonamideTrimethoprim",
-		"XMLPath": "ReportingCategories.HDC-2011"
-	},
-	"HDC-2012": {
-		"title": "HDC-2012",
-		"type": "ratio",
-		"description": "AntibioticBreakdownErythromycin",
-		"XMLPath": "ReportingCategories.HDC-2012"
-	},
-	"HDC-2013": {
-		"title": "HDC-2013",
-		"type": "ratio",
-		"description": "AntibioticBreakdownClarithromycin",
-		"XMLPath": "ReportingCategories.HDC-2013"
-	},
-	"HDC-2014": {
-		"title": "HDC-2014",
-		"type": "ratio",
-		"description": "AntibioticBreakdownAzithromycin",
-		"XMLPath": "ReportingCategories.HDC-2014"
-	},
-	"HDC-2015": {
-		"title": "HDC-2015",
-		"type": "ratio",
-		"description": "AntibioticBreakdownClindamycin",
-		"XMLPath": "ReportingCategories.HDC-2015"
-	},
-	"HDC-2016": {
-		"title": "HDC-2016",
-		"type": "ratio",
-		"description": "AntibioticBreakdownCiprofloxacin",
-		"XMLPath": "ReportingCategories.HDC-2016"
-	},
-	"HDC-2017": {
-		"title": "HDC-2017",
-		"type": "ratio",
-		"description": "AntibioticBreakdownLevofloxacin",
-		"XMLPath": "ReportingCategories.HDC-2017"
-	},
-	"HDC-2018": {
-		"title": "HDC-2018",
-		"type": "ratio",
-		"description": "AntibioticBreakdownMoxifloxacin",
-		"XMLPath": "ReportingCategories.HDC-2018"
-	},
-	"HDC-2019": {
-		"title": "HDC-2019",
-		"type": "ratio",
-		"description": "AntibioticBreakdownNitrofurantoin",
-		"XMLPath": "ReportingCategories.HDC-2019"
-	},
-	"HDC-2020": {
-		"title": "HDC-2020",
-		"type": "ratio",
-		"description": "AntibioticBreakdownPenicillinV",
-		"XMLPath": "ReportingCategories.HDC-2020"
-	},
-	"HDC-2021": {
-		"title": "HDC-2021",
-		"type": "ratio",
-		"description": "AntibioticBreakdownOther",
-		"XMLPath": "ReportingCategories.HDC-2021"
-	},
-	"HDC-9995": {
-		"exclude": true,
-		"description": "Testing Query"
-	},
-	"HDC-9996": {
-		"exclude": true,
-		"description": "Testing Query"
-	},
-	"HDC-9997": {
-		"exclude": true,
-		"description": "Testing Query"
-	},
-	"HDC-9998": {
-		"exclude": true,
-		"description": "Testing Query"
-	},
-	"HDC-9999": {
-		"exclude": true,
-		"description": "Testing Query"
-	},
-	"Test-0505": {
-		"exclude": true,
-		"description": "Testing Query"
-	}
+        "HDC-0001": {
+                "type": "TenYearRanges",
+                "description": "PatientCounts",
+                "XMLPath": "PatientCounts",
+                "genderMap": {
+                        "Male": "Male",
+                        "Female": "Female",
+                        "Unspecified": "Unspecified"
+                },
+                "ageMap": {
+                        "0": "ZeroToNine",
+                        "10": "TenToNineteen",
+                        "20": "TwentyToTwentyNine",
+                        "30": "ThirtyToThirtyNine",
+                        "40": "FortyToFortyNine",
+                        "50": "FiftyToFiftyNine",
+                        "60": "SixtyToSixtyNine",
+                        "70": "SeventyToSeventyNine",
+                        "80": "EightyToEightyNine",
+                        "90": "NinetyToOneHundredAndOlder",
+                        "UN": "UnspecifiedAge"
+                }
+        },
+        "HDC-0002": {
+                "title": "HDC-0002",
+                "type": "Ratio",
+                "description": "Frailty",
+                "XMLPath": "ReportingCategories.HDC-0002"
+        },
+        "HDC-0004": {
+                "type": "Ratio",
+                "description": "UndocumentedBirthdate",
+                "XMLPath": "ReportingCategories.HDC-0004"
+        },
+        "HDC-0009": {
+                "type": "Ratio",
+                "description": "bmi_map_20",
+                "XMLPath": "ReportingCategories.HDC-0009"
+        },
+        "HDC-0014": {
+                "type": "Ratio",
+                "description": "PH-pneumococcalMap",
+                "XMLPath": "ReportingCategories.HDC-0014"
+        },
+        "HDC-0020": {
+                "type": "Ratio",
+                "description": "PH-recentColonScreening",
+                "XMLPath": "ReportingCategories.Fecal_occult_blood_in_last_2_yrs_age_50To74"
+        },
+        "HDC-0022": {
+                "type": "Ratio",
+                "description": "FastingBloodSugar",
+                "XMLPath": "ReportingCategories.Fasting_blood_sugar_in_last_3_yrs_age_GreaterThan_45"
+        },
+        "HDC-0025": {
+                "type": "Ratio",
+                "description": "DiabetesHgbA1C",
+                "XMLPath": "ReportingCategories.Diabetics_with_HGBA1C_in_last_6_mo"
+        },
+        "HDC-0026": {
+                "type": "Ratio",
+                "description": "DiabetesHgbA1CValue",
+                "XMLPath": "ReportingCategories.HGBA1C_in_last_yr_LessThanOrEqualTo_7Point0"
+        },
+        "HDC-0027": {
+                "type": "Ratio",
+                "description": "DiabetesLDLValue",
+                "XMLPath": "ReportingCategories.LDL_in_last_yr_LessThanOrEqualTo_2Point5"
+        },
+        "HDC-0028": {
+                "type": "Ratio",
+                "description": "DiabetesBP",
+                "XMLPath": "ReportingCategories.Diabetes_And_BP_LessThanOrEqualTo_130_80_in_last_yr"
+        },
+        "HDC-0053": {
+                "type": "Ratio",
+                "description": "PP-ppMap5+",
+                "XMLPath": "ReportingCategories.HDC-0053"
+        },
+        "HDC-0054": {
+                "type": "Ratio",
+                "description": "PP-ppMap10+",
+                "XMLPath": "ReportingCategories.HDC-0054"
+        },
+        "HDC-0056": {
+                "type": "Ratio",
+                "description": "PP-renalMap65",
+                "XMLPath": "ReportingCategories.HDC-0056"
+        },
+        "HDC-0057": {
+                "type": "Ratio",
+                "description": "PP-primaryStatinMap65",
+                "XMLPath": "ReportingCategories.HDC-0057"
+        },
+        "HDC-0058": {
+                "type": "Ratio",
+                "description": "PP-secondaryStatinMap65",
+                "XMLPath": "ReportingCategories.HDC-0058"
+        },
+        "HDC-0602": {
+                "type": "Ratio",
+                "description": "DQ-Obesity-last2years",
+                "XMLPath": "ReportingCategories.HDC-0602"
+        },
+        "HDC-0732": {
+                "type": "Ratio",
+                "description": "ChronicPain",
+                "XMLPath": "ReportingCategories.HDC-0732"
+        },
+        "HDC-0733": {
+                "type": "Ratio",
+                "description": "PR-chronicPainAndOpioids",
+                "XMLPath": "ReportingCategories.HDC-0733"
+        },
+        "HDC-0734": {
+                "type": "Ratio",
+                "description": "PR-opioidsWithoutChronicPain",
+                "XMLPath": "ReportingCategories.HDC-0734"
+        },
+        "HDC-0739": {
+                "type": "Ratio",
+                "description": "PR-chronicPainAndDepression",
+                "XMLPath": "ReportingCategories.HDC-0739"
+        },
+        "HDC-0743": {
+                "type": "Ratio",
+                "description": "RaOaLbp",
+                "XMLPath": "ReportingCategories.HDC-0743"
+        },
+        "HDC-0753": {
+                "type": "Ratio",
+                "description": "PR-oseteoarthritisAcetaminophen",
+                "XMLPath": "ReportingCategories.HDC-0753"
+        },
+        "HDC-0761B": {
+                "type": "Ratio",
+                "description": "EOL-frailty55",
+                "XMLPath": "ReportingCategories.HDC-0761B"
+        },
+        "HDC-0761": {
+                "type": "Ratio",
+                "description": "EOL-55+",
+                "XMLPath": "ReportingCategories.HDC-0761"
+        },
+        "HDC-0831": {
+                "type": "Ratio",
+                "description": "DQ-EncounterFrequency",
+                "XMLPath": "ReportingCategories.HDC-0831"
+        },
+        "HDC-0832": {
+                "type": "Ratio",
+                "description": "DQ-DocumentedGender",
+                "XMLPath": "ReportingCategories.HDC-0832"
+        },
+        "HDC-0833": {
+                "type": "Ratio",
+                "description": "DQ-InvalidBirthdate",
+                "XMLPath": "ReportingCategories.HDC-0833"
+        },
+        "HDC-0834": {
+                "type": "Ratio",
+                "description": "DQ-UndocumentedBirthdate",
+                "XMLPath": "ReportingCategories.HDC-0834"
+        },
+        "HDC-0836": {
+                "type": "Ratio",
+                "description": "DQ-CodedMedications",
+                "XMLPath": "ReportingCategories.HDC-0836"
+        },
+        "HDC-0837": {
+                "type": "Ratio",
+                "description": "DQ-PrescriptionFrequency",
+                "XMLPath": "ReportingCategories.HDC-0837"
+        },
+        "HDC-0838": {
+                "type": "Ratio",
+                "description": "DQ-NoMeds",
+                "XMLPath": "ReportingCategories.HDC-0838"
+        },
+        "HDC-0840": {
+                "type": "Ratio",
+                "description": "DQ-CodedConditions",
+                "XMLPath": "ReportingCategories.HDC-0840"
+        },
+        "HDC-0842": {
+                "type": "Ratio",
+                "description": "DQ-diabetes12+",
+                "XMLPath": "ReportingCategories.HDC-0842"
+        },
+        "HDC-0843": {
+                "type": "Ratio",
+                "description": "DQ-tiotropiumAndCOPD",
+                "XMLPath": "ReportingCategories.HDC-0843"
+        },
+        "HDC-0845": {
+                "type": "Ratio",
+                "description": "DQ-levothroxineAndHypothyroidism",
+                "XMLPath": "ReportingCategories.HDC-0845"
+        },
+        "HDC-0846": {
+                "type": "Ratio",
+                "description": "DQ-antigoutWithGout",
+                "XMLPath": "ReportingCategories.HDC-0846"
+        },
+        "HDC-0865": {
+                "type": "Ratio",
+                "description": "DQ-bpCheck21+",
+                "XMLPath": "ReportingCategories.HDC-0865"
+        },
+        "HDC-0882": {
+                "type": "Ratio",
+                "description": "DQ-PatientsWithACondition",
+                "XMLPath": "ReportingCategories.HDC-0882"
+        },
+        "HDC-0889": {
+                "type": "Ratio",
+                "description": "DQ-bmiCheck21+",
+                "XMLPath": "ReportingCategories.HDC-0889"
+        },
+        "HDC-0917": {
+                "title": "HDC-0917",
+                "type": "ratio",
+                "description": "PH-cervixScreening",
+                "XMLPath": "ReportingCategories.HDC-0917"
+        },
+        "HDC-0919": {
+                "title": "HDC-0919",
+                "type": "ratio",
+                "description": "HypertensionAndBPInLastYear",
+                "XMLPath": "ReportingCategories.HDC-0919"
+        },
+        "HDC-0934": {
+                "type": "Ratio",
+                "description": "COPDandPneumococcal",
+                "XMLPath": "ReportingCategories.COPD_and_pneumococcal_vaccine"
+        },
+        "HDC-0943": {
+                "type": "Ratio",
+                "description": "PH-recentInfluencaVacc65+",
+                "XMLPath": "ReportingCategories.Influenza_Vac_65Plus"
+        },
+        "HDC-0945": {
+                "title": "HDC-0945",
+                "type": "ratio",
+                "description": "PH-frailty",
+                "XMLPath": "ReportingCategories.HDC-0945"
+        },
+        "HDC-0947": {
+                "title": "HDC-0947",
+                "type": "ratio",
+                "description": "PH-dementia",
+                "XMLPath": "ReportingCategories.HDC-0947"
+        },
+        "HDC-0950": {
+                "title": "HDC-0950",
+                "type": "ratio",
+                "description": "PH-endOfLife",
+                "XMLPath": "ReportingCategories.HDC-0950"
+        },
+        "HDC-0952": {
+                "title": "HDC-0952",
+                "type": "ratio",
+                "description": "PH-parkinsons",
+                "XMLPath": "ReportingCategories.HDC-0952"
+        },
+        "HDC-0954": {
+                "type": "Ratio",
+                "description": "PH-chronicKidneyDisease",
+                "XMLPath": "ReportingCategories.HDC-0954"
+        },
+        "HDC-0955": {
+                "type": "Ratio",
+                "description": "PH-congestiveHeartFailure",
+                "XMLPath": "ReportingCategories.HDC-0955"
+        },
+        "HDC-0956": {
+                "type": "Ratio",
+                "description": "PH-asthma",
+                "XMLPath": "ReportingCategories.HDC-0956"
+        },
+        "HDC-0957": {
+                "title": "HDC-0957",
+                "type": "ratio",
+                "description": "PH-anxiety",
+                "XMLPath": "ReportingCategories.HDC-0957"
+        },
+        "HDC-0958": {
+                "type": "Ratio",
+                "description": "PH-chronicObstructivePulminaryDisease",
+                "XMLPath": "ReportingCategories.HDC-0958"
+        },
+        "HDC-0959": {
+                "type": "Ratio",
+                "description": "PH-depression",
+                "XMLPath": "ReportingCategories.HDC-0959"
+        },
+        "HDC-0960": {
+                "type": "Ratio",
+                "description": "PH-diabetes",
+                "XMLPath": "ReportingCategories.HDC-0960"
+        },
+        "HDC-0962": {
+                "type": "Ratio",
+                "description": "PH-hypertension",
+                "XMLPath": "ReportingCategories.HDC-0962"
+        },
+        "HDC-0964": {
+                "type": "Ratio",
+                "description": "PH-rheumatoid",
+                "XMLPath": "ReportingCategories.HDC-0964"
+        },
+        "HDC-0970": {
+                "title": "HDC-0970",
+                "type": "ratio",
+                "description": "PH-dependenceAlcohol",
+                "XMLPath": "ReportingCategories.HDC-0970"
+        },
+        "HDC-0971": {
+                "title": "HDC-0971",
+                "type": "ratio",
+                "description": "PH-dependenceDrugs",
+                "XMLPath": "ReportingCategories.HDC-0971"
+        },
+        "HDC-0981": {
+                "type": "Ratio",
+                "description": "PH-hepC",
+                "XMLPath": "ReportingCategories.HDC-0981"
+        },
+        "HDC-0995": {
+                "type": "Ratio",
+                "description": "PH-recentMammogram50-70",
+                "XMLPath": "ReportingCategories.Screening_Mammogram_ages_50To70"
+        },
+        "HDC-1004": {
+                "type": "Ratio",
+                "description": "ObesityYouth",
+                "XMLPath": "ReportingCategories.HDC-1004"
+        },
+        "HDC-1134": {
+                "title": "HDC-1134",
+                "type": "ratio",
+                "description": "INRMonitoring",
+                "XMLPath": "ReportingCategories.HDC-1134"
+        },
+        "HDC-1135A": {
+                "type": "Ratio",
+                "description": "LastLab-A1Clt7point1wDiabetes",
+                "XMLPath": "ReportingCategories.HDC-1135A"
+        },
+        "HDC-1135B": {
+                "type": "Ratio",
+                "description": "Lab-A1C7point1to8point0wDiabetes",
+                "XMLPath": "ReportingCategories.HDC-1135B"
+        },
+        "HDC-1135C": {
+                "type": "Ratio",
+                "description": "Lab-A1C8point1to9point0wDiabetes",
+                "XMLPath": "ReportingCategories.HDC-1135C"
+        },
+        "HDC-1135D": {
+                "type": "Ratio",
+                "description": "Lab-A1Cgt9point0wDiabetes",
+                "XMLPath": "ReportingCategories.HDC-1135D"
+        },
+        "HDC-1136": {
+                "title": "HDC-1136",
+                "type": "ratio",
+                "description": "Lab-LDLlt2point6wDiabetes",
+                "XMLPath": "ReportingCategories.HDC-1136"
+        },
+        "HDC-1149": {
+                "type": "Ratio",
+                "description": "PH-cervixScreening",
+                "XMLPath": "ReportingCategories.HDC-1149"
+        },
+        "HDC-1153": {
+                "type": "Ratio",
+                "description": "Lab-FBSorA1C45+",
+                "XMLPath": "ReportingCategories.HDC-1153"
+        },
+        "HDC-1154": {
+                "type": "Ratio",
+                "description": "PH-pneumovaxAdministered",
+                "XMLPath": "ReportingCategories.HDC-1154"
+        },
+        "HDC-1155": {
+                "type": "Ratio",
+                "description": "PH-tetanusVaccinations",
+                "XMLPath": "ReportingCategories.Pneumococcal_Vac_65Plus"
+        },
+        "HDC-1178": {
+                "type": "Ratio",
+                "description": "ElderlyPatients",
+                "XMLPath": "ReportingCategories.HDC-1178"
+        },
+        "HDC-1738": {
+                "type": "Ratio",
+                "description": "ActivePatients",
+                "XMLPath": "ReportingCategories.Active_Patient_Proportion_in_last_3_years"
+        },
+        "HDC-1740": {
+                "type": "TenYearRanges",
+                "description": "ContactCounts",
+                "XMLPath": "ContactCounts",
+                "genderMap": {
+                        "Male": "Male",
+                        "Female": "Female",
+                        "Unspecified": "Unspecified"
+                },
+                "ageMap": {
+                        "0": "ZeroToNine",
+                        "10": "TenToNineteen",
+                        "20": "TwentyToTwentyNine",
+                        "30": "ThirtyToThirtyNine",
+                        "40": "FortyToFortyNine",
+                        "50": "FiftyToFiftyNine",
+                        "60": "SixtyToSixtyNine",
+                        "70": "SeventyToSeventyNine",
+                        "80": "EightyToEightyNine",
+                        "90": "NinetyToOneHundredAndOlder",
+                        "UN": "UnspecifiedAge"
+                }
+        },
+        "HDC-1785": {
+                "type": "Ratio",
+                "description": "ObesityAdult",
+                "XMLPath": "ReportingCategories.HDC-1785"
+        },
+        "HDC-1786": {
+                "type": "Ratio",
+                "description": "PH-ischemicHeartDisease",
+                "XMLPath": "ReportingCategories.HDC-1786"
+        },
+        "HDC-1787": {
+                "type": "Ratio",
+                "description": "PH-cerebrovascularDisease",
+                "XMLPath": "ReportingCategories.HDC-1787"
+        },
+        "HDC-1788": {
+                "type": "Ratio",
+                "description": "PH-osteoarthritis",
+                "XMLPath": "ReportingCategories.HDC-1788"
+        },
+        "HDC-1899": {
+                "type": "Ratio",
+                "description": "DQ-Obesity-Youth-last2years",
+                "XMLPath": "ReportingCategories.BMI_or_WC_documentation_in_last_2_yrs_age_12To19"
+        },
+        "HDC-1900": {
+                "type": "Ratio",
+                "description": "DQ-Obesity-Adult-last2years",
+                "XMLPath": "ReportingCategories.BMI_or_WC_documented_in_last_2_yrs_age_GreaterThan19"
+        },
+        "HDC-1901": {
+                "type": "Ratio",
+                "description": "pneumococcalVaccinationElderly",
+                "XMLPath": "ReportingCategories.HDC-1901"
+        },
+        "HDC-1902": {
+                "type": "Ratio",
+                "description": "PH-colonScreening",
+                "XMLPath": "ReportingCategories.HDC-1902"
+        },
+        "HDC-1903": {
+                "type": "Ratio",
+                "description": "Lab-FBS46+",
+                "XMLPath": "ReportingCategories.HDC-1903"
+        },
+        "HDC-1904": {
+                "type": "Ratio",
+                "description": "Lab-A1CwDiabetes",
+                "XMLPath": "ReportingCategories.HDC-1904"
+        },
+        "HDC-1905": {
+                "type": "Ratio",
+                "description": "Lab-A1Clt7wDiabetes",
+                "XMLPath": "ReportingCategories.HDC-1905"
+        },
+        "HDC-1906": {
+                "type": "Ratio",
+                "description": "Lab-LDLlt2point5wDiabetes",
+                "XMLPath": "ReportingCategories.HDC-1906"
+        },
+        "HDC-1907": {
+                "type": "Ratio",
+                "description": "BloodPressure-Diabetes",
+                "XMLPath": "ReportingCategories.HDC-1907"
+        },
+        "HDC-1918": {
+                "title": "HDC-1918",
+                "type": "ratio",
+                "description": "ImmunizationClassification",
+                "XMLPath": "ReportingCategories.HDC-1918"
+        },
+        "HDC-1921": {
+                "type": "Ratio",
+                "description": "MU-MHG-CoA65+",
+                "XMLPath": "ReportingCategories.HDC-1921"
+        },
+        "HDC-1922": {
+                "type": "Ratio",
+                "description": "MU-AceInhibitor65+",
+                "XMLPath": "ReportingCategories.HDC-1922"
+        },
+        "HDC-1923": {
+                "type": "Ratio",
+                "description": "MU-PPI65+",
+                "XMLPath": "ReportingCategories.HDC-1923"
+        },
+        "HDC-1924": {
+                "type": "Ratio",
+                "description": "MU-BetaBlockers65+",
+                "XMLPath": "ReportingCategories.HDC-1924"
+        },
+        "HDC-1925": {
+                "type": "Ratio",
+                "description": "MU-DihydropyridineCalciumChannelBlocker65+",
+                "XMLPath": "ReportingCategories.HDC-1925"
+        },
+        "HDC-1926": {
+                "type": "Ratio",
+                "description": "MU-ThyroidHormone65+",
+                "XMLPath": "ReportingCategories.HDC-1926"
+        },
+        "HDC-1927": {
+                "type": "Ratio",
+                "description": "MU-NaturalOpiumAlkaloid65+",
+                "XMLPath": "ReportingCategories.HDC-1927"
+        },
+        "HDC-1928": {
+                "type": "Ratio",
+                "description": "MU-Angeotensin2Antagonist65+",
+                "XMLPath": "ReportingCategories.HDC-1928"
+        },
+        "HDC-1929": {
+                "type": "Ratio",
+                "description": "MU-Biguinide65+",
+                "XMLPath": "ReportingCategories.HDC-1929"
+        },
+        "HDC-1930": {
+                "type": "Ratio",
+                "description": "MU-Thiazide65+",
+                "XMLPath": "ReportingCategories.HDC-1930"
+        },
+        "HDC-1931": {
+                "title": "HDC-1931",
+                "type": "ratio",
+                "description": "MU-Digoxin",
+                "XMLPath": "ReportingCategories.HDC-1931"
+        },
+        "HDC-1932": {
+                "type": "Ratio",
+                "description": "PH_chronicPainOpioids200+",
+                "XMLPath": "ReportingCategories.HDC-1932"
+        },
+        "HDC-1933": {
+                "type": "Ratio",
+                "description": "PH-chronicPainOpioids100-200",
+                "XMLPath": "ReportingCategories.HDC-1933"
+        },
+        "HDC-1934": {
+                "type": "Ratio",
+                "description": "PH-chronicPainOpioids50-100",
+                "XMLPath": "ReportingCategories.HDC-1934"
+        },
+        "HDC-1935": {
+                "type": "Ratio",
+                "description": "PH-chronicPainOpioids10-50",
+                "XMLPath": "ReportingCategories.HDC-1935"
+        },
+        "HDC-1936": {
+                "title": "HDC-1936",
+                "type": "Ratio",
+                "description": "PH-chronicPainOpioids0-10",
+                "XMLPath": "ReportingCategories.HDC-1936"
+        },
+        "HDC-1940": {
+                "title": "HDC-1940",
+                "type": "ratio",
+                "description": "MU-Antidepressants65+",
+                "XMLPath": "ReportingCategories.HDC-1940"
+        },
+        "HDC-1941": {
+                "title": "HDC-1941",
+                "type": "ratio",
+                "description": "medicationFrequencyDataQuality",
+                "XMLPath": "ReportingCategories.HDC-1941"
+        },
+        "HDC-1942": {
+                "title": "HDC-1942",
+                "type": "ratio",
+                "description": "MU-Antipsychotics65+",
+                "XMLPath": "ReportingCategories.HDC-1942"
+        },
+        "HDC-1943": {
+                "title": "HDC-1943",
+                "type": "ratio",
+                "description": "MU-NSAID65+",
+                "XMLPath": "ReportingCategories.HDC-1943"
+        },
+        "HDC-1944": {
+                "title": "HDC-1944",
+                "type": "ratio",
+                "description": "MU-NSAID",
+                "XMLPath": "ReportingCategories.HDC-1944"
+        },
+        "HDC-1945": {
+                "title": "HDC-1945",
+                "type": "ratio",
+                "description": "MU-benzodiazepine65+",
+                "XMLPath": "ReportingCategories.HDC-1945"
+        },
+        "HDC-1946": {
+                "title": "HDC-1946",
+                "type": "ratio",
+                "description": "MU-benzodiazepine",
+                "XMLPath": "ReportingCategories.HDC-1946"
+        },
+        "HDC-1947": {
+                "title": "HDC-1947",
+                "type": "ratio",
+                "description": "MU-benzodiazepineAndOpioid65+",
+                "XMLPath": "ReportingCategories.HDC-1947"
+        },
+        "HDC-1948": {
+                "title": "HDC-1948",
+                "type": "ratio",
+                "description": "MU-benzodiazepineAndOpioid",
+                "XMLPath": "ReportingCategories.HDC-1948"
+        },
+        "HDC-1950": {
+                "title": "HDC-1950",
+                "type": "ratio",
+                "description": "MU-Digoxin65+",
+                "XMLPath": "ReportingCategories.HDC-1950"
+        },
+        "HDC-1951": {
+                "title": "HDC-1951",
+                "type": "ratio",
+                "description": "MU-Morphine",
+                "XMLPath": "ReportingCategories.HDC-1951"
+        },
+        "HDC-1952": {
+                "title": "HDC-1952",
+                "type": "ratio",
+                "description": "MU-Hydromorphine",
+                "XMLPath": "ReportingCategories.HDC-1952"
+        },
+        "HDC-1953": {
+                "title": "HDC-1953",
+                "type": "ratio",
+                "description": "MU-Dihydrocodeine",
+                "XMLPath": "ReportingCategories.HDC-1953"
+        },
+        "HDC-1954": {
+                "title": "HDC-1954",
+                "type": "ratio",
+                "description": "MU-MorphineCombinations",
+                "XMLPath": "ReportingCategories.HDC-1954"
+        },
+        "HDC-1955": {
+                "title": "HDC-1955",
+                "type": "ratio",
+                "description": "MU-OxycodoneCombinations",
+                "XMLPath": "ReportingCategories.HDC-1955"
+        },
+        "HDC-1956": {
+                "title": "HDC-1956",
+                "type": "ratio",
+                "description": "MU-DihydrocodeineCombinations",
+                "XMLPath": "ReportingCategories.HDC-1956"
+        },
+        "HDC-1957": {
+                "title": "HDC-1957",
+                "type": "ratio",
+                "description": "MU-CodeineCombinationsExcludingPsycholeptics",
+                "XMLPath": "ReportingCategories.HDC-1957"
+        },
+        "HDC-1958": {
+                "title": "HDC-1958",
+                "type": "ratio",
+                "description": "MU-CodeineCombinationsWithPsycholeptics",
+                "XMLPath": "ReportingCategories.HDC-1958"
+        },
+        "HDC-1959": {
+                "title": "HDC-1959",
+                "type": "ratio",
+                "description": "MU-Fentanyl",
+                "XMLPath": "ReportingCategories.HDC-1959"
+        },
+        "HDC-1960": {
+                "title": "HDC-1960",
+                "type": "ratio",
+                "description": "MU-MethadoneCombinationsExcludingPsycholeptics",
+                "XMLPath": "ReportingCategories.HDC-1960"
+        },
+        "HDC-1961": {
+                "title": "HDC-1961",
+                "type": "ratio",
+                "description": "MU-Tramadol",
+                "XMLPath": "ReportingCategories.HDC-1961"
+        },
+        "HDC-1962": {
+                "title": "HDC-1962",
+                "type": "ratio",
+                "description": "MU-TramadolCombinations",
+                "XMLPath": "ReportingCategories.HDC-1962"
+        },
+        "HDC-1963": {
+                "title": "HDC-1963",
+                "type": "ratio",
+                "description": "MU-OtherOpioid",
+                "XMLPath": "ReportingCategories.HDC-1963"
+        },
+        "HDC-1995": {
+                "title": "HDC-1995",
+                "type": "Ratio",
+                "description": "AntidepressantUse",
+                "XMLPath": "ReportingCategories.HDC-1995"
+        },
+        "HDC-1996": {
+                "title": "HDC-1996",
+                "type": "ratio",
+                "description": "AntipsychoticUse",
+                "XMLPath": "ReportingCategories.HDC-1996"
+        },
+        "HDC-1997": {
+                "title": "HDC-1997",
+                "type": "ratio",
+                "description": "AntibioticUse",
+                "XMLPath": "ReportingCategories.HDC-1997"
+        },
+        "HDC-2001": {
+                "title": "HDC-2001",
+                "type": "ratio",
+                "description": "AntibioticBreakdownDoxycycline",
+                "XMLPath": "ReportingCategories.HDC-2001"
+        },
+        "HDC-2002": {
+                "title": "HDC-2002",
+                "type": "ratio",
+                "description": "AntibioticBreakdownTetracycline",
+                "XMLPath": "ReportingCategories.HDC-2002"
+        },
+        "HDC-2003": {
+                "title": "HDC-2003",
+                "type": "ratio",
+                "description": "AntibioticBreakdownMinocycline",
+                "XMLPath": "ReportingCategories.HDC-2003"
+        },
+        "HDC-2004": {
+                "title": "HDC-2004",
+                "type": "ratio",
+                "description": "AntibioticBreakdownAmpicillin",
+                "XMLPath": "ReportingCategories.HDC-2004"
+        },
+        "HDC-2005": {
+                "title": "HDC-2005",
+                "type": "ratio",
+                "description": "AntibioticBreakdownAmoxicillin",
+                "XMLPath": "ReportingCategories.HDC-2005"
+        },
+        "HDC-2006": {
+                "title": "HDC-2006",
+                "type": "ratio",
+                "description": "AntibioticBreakdownCloxacillin",
+                "XMLPath": "ReportingCategories.HDC-2006"
+        },
+        "HDC-2007": {
+                "title": "HDC-2007",
+                "type": "ratio",
+                "description": "AntibioticBreakdownCefalexin",
+                "XMLPath": "ReportingCategories.HDC-2007"
+        },
+        "HDC-2008": {
+                "title": "HDC-2008",
+                "type": "ratio",
+                "description": "AntibioticBreakdownCefuroxime",
+                "XMLPath": "ReportingCategories.HDC-2008"
+        },
+        "HDC-2009": {
+                "title": "HDC-2009",
+                "type": "ratio",
+                "description": "AntibioticBreakdownCefaclor",
+                "XMLPath": "ReportingCategories.HDC-2009"
+        },
+        "HDC-2010": {
+                "title": "HDC-2010",
+                "type": "ratio",
+                "description": "AntibioticBreakdownCefixime",
+                "XMLPath": "ReportingCategories.HDC-2010"
+        },
+        "HDC-2011": {
+                "title": "HDC-2011",
+                "type": "ratio",
+                "description": "AntibioticBreakdownSulfonamideTrimethoprim",
+                "XMLPath": "ReportingCategories.HDC-2011"
+        },
+        "HDC-2012": {
+                "title": "HDC-2012",
+                "type": "ratio",
+                "description": "AntibioticBreakdownErythromycin",
+                "XMLPath": "ReportingCategories.HDC-2012"
+        },
+        "HDC-2013": {
+                "title": "HDC-2013",
+                "type": "ratio",
+                "description": "AntibioticBreakdownClarithromycin",
+                "XMLPath": "ReportingCategories.HDC-2013"
+        },
+        "HDC-2014": {
+                "title": "HDC-2014",
+                "type": "ratio",
+                "description": "AntibioticBreakdownAzithromycin",
+                "XMLPath": "ReportingCategories.HDC-2014"
+        },
+        "HDC-2015": {
+                "title": "HDC-2015",
+                "type": "ratio",
+                "description": "AntibioticBreakdownClindamycin",
+                "XMLPath": "ReportingCategories.HDC-2015"
+        },
+        "HDC-2016": {
+                "title": "HDC-2016",
+                "type": "ratio",
+                "description": "AntibioticBreakdownCiprofloxacin",
+                "XMLPath": "ReportingCategories.HDC-2016"
+        },
+        "HDC-2017": {
+                "title": "HDC-2017",
+                "type": "ratio",
+                "description": "AntibioticBreakdownLevofloxacin",
+                "XMLPath": "ReportingCategories.HDC-2017"
+        },
+        "HDC-2018": {
+                "title": "HDC-2018",
+                "type": "ratio",
+                "description": "AntibioticBreakdownMoxifloxacin",
+                "XMLPath": "ReportingCategories.HDC-2018"
+        },
+        "HDC-2019": {
+                "title": "HDC-2019",
+                "type": "ratio",
+                "description": "AntibioticBreakdownNitrofurantoin",
+                "XMLPath": "ReportingCategories.HDC-2019"
+        },
+        "HDC-2020": {
+                "title": "HDC-2020",
+                "type": "ratio",
+                "description": "AntibioticBreakdownPenicillinV",
+                "XMLPath": "ReportingCategories.HDC-2020"
+        },
+        "HDC-2021": {
+                "title": "HDC-2021",
+                "type": "ratio",
+                "description": "AntibioticBreakdownOther",
+                "XMLPath": "ReportingCategories.HDC-2021"
+        },
+        "HDC-9995": {
+                "exclude": true,
+                "description": "Testing Query"
+        },
+        "HDC-9996": {
+                "exclude": true,
+                "description": "Testing Query"
+        },
+        "HDC-9997": {
+                "exclude": true,
+                "description": "Testing Query"
+        },
+        "HDC-9998": {
+                "exclude": true,
+                "description": "Testing Query"
+        },
+        "HDC-9999": {
+                "exclude": true,
+                "description": "Testing Query"
+        },
+        "Test-0505": {
+                "exclude": true,
+                "description": "Testing Query"
+        }
 }
