@@ -14,7 +14,7 @@ MAINTAINER derek.roberts@gmail.com
 #
 WORKDIR /app/
 COPY . .
-RUN sed -i -e 's/localhost:27017/database:27017/' lib/executions.js; \
+RUN sed -i -e 's/localhost:27017/composerdb:27017/' lib/executions.js; \
     npm install
 
 
