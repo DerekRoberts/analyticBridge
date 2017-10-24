@@ -106,7 +106,7 @@
         "HDC-0732": {
                 "type": "Ratio",
                 "description": "ChronicPain",
-                "XMLPath": "ReportingCategories.HDC-0732"
+                "XMLPath": "ReportingCategories.Chronic_Pain_prevalence"
         },
         "HDC-0733": {
                 "type": "Ratio",
@@ -244,7 +244,7 @@
                 "title": "HDC-0945",
                 "type": "ratio",
                 "description": "PH-frailty",
-                "XMLPath": "ReportingCategories.HDC-0945"
+                "XMLPath": "ReportingCategories.Frail_Elderly_prevalence"
         },
         "HDC-0947": {
                 "title": "HDC-0947",
@@ -267,12 +267,12 @@
         "HDC-0954": {
                 "type": "Ratio",
                 "description": "PH-chronicKidneyDisease",
-                "XMLPath": "ReportingCategories.HDC-0954"
+                "XMLPath": "ReportingCategories.Chronic_Kidney_Disease_prevalence"
         },
         "HDC-0955": {
                 "type": "Ratio",
                 "description": "PH-congestiveHeartFailure",
-                "XMLPath": "ReportingCategories.HDC-0955"
+                "XMLPath": "ReportingCategories.CHF_prevalence"
         },
         "HDC-0956": {
                 "type": "Ratio",
@@ -288,22 +288,22 @@
         "HDC-0958": {
                 "type": "Ratio",
                 "description": "PH-chronicObstructivePulminaryDisease",
-                "XMLPath": "ReportingCategories.HDC-0958"
+                "XMLPath": "ReportingCategories.COPD_prevalence"
         },
         "HDC-0959": {
                 "type": "Ratio",
                 "description": "PH-depression",
-                "XMLPath": "ReportingCategories.HDC-0959"
+                "XMLPath": "ReportingCategories.Depression_prevalence"
         },
         "HDC-0960": {
                 "type": "Ratio",
                 "description": "PH-diabetes",
-                "XMLPath": "ReportingCategories.HDC-0960"
+                "XMLPath": "ReportingCategories.Diabetes_prevalence"
         },
         "HDC-0962": {
                 "type": "Ratio",
                 "description": "PH-hypertension",
-                "XMLPath": "ReportingCategories.HDC-0962"
+                "XMLPath": "ReportingCategories.Hypertension_prevalence"
         },
         "HDC-0964": {
                 "type": "Ratio",
