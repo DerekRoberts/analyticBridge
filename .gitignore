@@ -10,7 +10,8 @@
 .directory
 id_rsa
 node_modules/
-scorecards/*.xml
+scorecards/*
+!scorecards/
 
 # Exclipse specific config files
 .project
