@@ -15,6 +15,7 @@ scorecards/*
 !scorecards/
 config/connections.json
 config/doctors.json
+config/*doctors.json
 
 # Exclipse specific config files
 .project
