@@ -1,0 +1,10 @@
+{
+  "cpsid" :
+  {
+    "pid"         : "cpsid",
+    "exportAs"    : "DrTestDoctor",
+    "cpsid"       : "cpsid",
+    "clinic"      : "12345678-abcd-1234-abcd-1234567890ab",
+    "endpoint"    : "0"
+  }
+}
