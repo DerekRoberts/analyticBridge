@@ -16,7 +16,7 @@
     "js2xmlparser": "1.0.0",
     "scp2": "0.2.2",
     "dateformat": "1.0.12",
-    "moment" : "2.14.1",
+    "moment" : "2.19.3",
     "jsdoc" : "3.4.0",
     "async" : "2.0.1",
     "semaphore" : "1.0.5"
